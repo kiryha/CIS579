@@ -48,6 +48,111 @@ class Graph:
     def __init__(self):
         self.nodes = {}
 
+    # Standard data structure methods
+    def add_node(self, node):
+        if node not in self.nodes:
+            self.nodes[node] = []
+
+    def add_edge(self, node1, node2):
+        if node1 in self.nodes and node2 in self.nodes:
+            if node2 not in self.nodes[node1]:
+                self.nodes[node1].append(node2)
+
+    # Search algorithms
+    def bfs(self, start, goal):
+        queue = [[start]]  # Queue for the nodes to visit, [[start]] is the initial path
+        visited = {start}  # Set of visited nodes
+        nodes_explored = 0  # Keep track of the number of nodes explored
+
+        while queue:
+            path = queue.pop(0)  # Get the first path from the queue
+            node = path[-1]  # Get the last node from the path
+            nodes_explored += 1  # Increment the number of nodes explored
+
+            # Check if we reached the goal
+            if node == goal:
+                print(f"BFS explored {nodes_explored} nodes.")
+                return path
+
+            # Enqueue paths with one additional move
+            for next_node in self.nodes[node]:
+                if next_node not in visited:
+                    visited.add(next_node)
+                    new_path = list(path)
+                    new_path.append(next_node)
+                    queue.append(new_path)
+
+        return None  # No path found
+
+    def branch_and_bound(self, start, goal):
+        queue = [(0, [start])]  # Queue for the nodes to visit, (0, [start]) is the initial path
+        visited = {start}  # Set of visited nodes
+        nodes_explored = 0  # Keep track of the number of nodes explored
+
+        while queue:
+            queue.sort(key=lambda x: x[0])  # Order by path length
+            path_length, path = queue.pop(0)  # Get the shortest path from the queue
+            node = path[-1]  # Get the last node from the path
+            nodes_explored += 1  # Increment the number of nodes explored
+
+            # Check if we reached the goal
+            if node == goal:
+                print(f"Branch and Bound explored {nodes_explored} nodes.")
+                return path
+
+            # Enqueue paths with one additional move
+            for next_node in self.nodes[node]:
+                if next_node not in visited:
+                    visited.add(next_node)
+                    new_path = list(path)
+                    new_path.append(next_node)
+                    new_path_length = path_length + 1
+                    queue.append((new_path_length, new_path))
+
+        return None  # No path found
+
+    def a_star(self, start, goal):
+        open_set = [start]  # Nodes to be evaluated
+        came_from = {}  # For each node, which node it can most efficiently be reached from
+        g_score = {node: float('inf') for node in self.nodes}  # Cost of getting from start to each node
+        g_score[start] = 0
+        f_score = {node: float('inf') for node in
+                   self.nodes}  # Estimated total cost from start to goal through each node
+        f_score[start] = self.heuristic(start, goal)
+        nodes_explored = 0  # Keep track of the number of nodes explored
+
+        while open_set:
+            current = min(open_set, key=f_score.get)  # Node in open_set with lowest f_score[] value
+            nodes_explored += 1  # Increment the number of nodes explored
+
+            if current == goal:
+                print(f"A* explored {nodes_explored} nodes.")
+                return self.reconstruct_path(came_from, current)
+
+            open_set.remove(current)
+            for neighbor in self.nodes[current]:
+                tentative_g_score = g_score[current] + 1  # Each edge has a cost of 1
+                if tentative_g_score < g_score[neighbor]:
+                    came_from[neighbor] = current
+                    g_score[neighbor] = tentative_g_score
+                    f_score[neighbor] = g_score[neighbor] + self.heuristic(neighbor, goal)
+                    if neighbor not in open_set:
+                        open_set.append(neighbor)
+
+        return None  # No path found
+
+    def heuristic(self, state, goal):
+
+        return sum(s != g for s, g in zip(state, goal))  # Number of knights not in goal positions
+
+    def reconstruct_path(self, came_from, current):
+        path = [current]
+        while current in came_from:
+            current = came_from[current]
+            path.insert(0, current)
+        return path
+
+    # Build graphs for 4 Knight and Test problems
     def build_solution_graph(self, all_states):
         """
         Create a graph of all possible moves in For Knights problem
@@ -100,98 +205,6 @@ class Graph:
                 if state + step in all_states:
                     self.add_edge(state, state + step)
 
-    def add_node(self, node):
-        if node not in self.nodes:
-            self.nodes[node] = []
-
-    def add_edge(self, node1, node2):
-        if node1 in self.nodes and node2 in self.nodes:
-            if node2 not in self.nodes[node1]:
-                self.nodes[node1].append(node2)
-
-    def bfs(self, start, goal):
-        queue = [[start]]  # Queue for the nodes to visit, [[start]] is the initial path
-        visited = {start}  # Set of visited nodes
-
-        while queue:
-            path = queue.pop(0)  # Get the first path from the queue
-            node = path[-1]  # Get the last node from the path
-
-            # Check if we reached the goal
-            if node == goal:
-                return path
-
-            # Enqueue paths with one additional move
-            for next_node in self.nodes[node]:
-                if next_node not in visited:
-                    visited.add(next_node)
-                    new_path = list(path)
-                    new_path.append(next_node)
-                    queue.append(new_path)
-
-        return None  # No path found
-
-    def branch_and_bound(self, start, goal):
-        visited = set()  # Set of visited nodes
-        queue = [(0, [start])]  # Queue for the nodes to visit, (0, [start]) is the initial path and cost
-
-        while queue:
-            cost, path = min(queue, key=lambda x: x[0])  # Get the path with minimum cost from the queue
-            queue.remove((cost, path))
-            node = path[-1]  # Get the last node from the path
-
-            if node == goal:
-                return path
-
-            if node not in visited:
-                visited.add(node)
-
-                for neighbor in self.nodes[node]:
-                    if neighbor not in visited:
-                        new_path = list(path)
-                        new_path.append(neighbor)
-                        new_cost = cost + 1  # Each edge has a cost of 1
-                        queue.append((new_cost, new_path))
-
-        return None  # No path found
-
-    def a_star(self, start, goal):
-        open_set = [start]  # Nodes to be evaluated
-        came_from = {}  # For each node, which node it can most efficiently be reached from
-        g_score = {node: float('inf') for node in self.nodes}  # Cost of getting from start to each node
-        g_score[start] = 0
-        f_score = {node: float('inf') for node in
-                   self.nodes}  # Estimated total cost from start to goal through each node
-        f_score[start] = self.heuristic(start, goal)
-
-        while open_set:
-            current = min(open_set, key=f_score.get)  # Node in open_set with lowest f_score[] value
-
-            if current == goal:
-                return self.reconstruct_path(came_from, current)
-
-            open_set.remove(current)
-            for neighbor in self.nodes[current]:
-                tentative_g_score = g_score[current] + 1  # Each edge has a cost of 1
-                if tentative_g_score < g_score[neighbor]:
-                    came_from[neighbor] = current
-                    g_score[neighbor] = tentative_g_score
-                    f_score[neighbor] = g_score[neighbor] + self.heuristic(neighbor, goal)
-                    if neighbor not in open_set:
-                        open_set.append(neighbor)
-
-        return None  # No path found
-
-    def heuristic(self, state, goal):
-        return sum(s != g for s, g in zip(state, goal))  # Number of knights not in goal positions
-
-    def reconstruct_path(self, came_from, current):
-        path = [current]
-        while current in came_from:
-            current = came_from[current]
-            path.insert(0, current)
-        return path
-
 
 def build_all_states():
     """
@@ -213,6 +226,7 @@ def build_all_states():
                     if len({a, b, c, d}) == 4:
                         if 5 not in [a, b, c, d]:
                             all_states.append((a, b, c, d))
+
     return all_states
 
 
@@ -235,7 +249,7 @@ start = (1, 3, 7, 9)
 goal = (9, 7, 3, 1)
 # path = graph.bfs(start, goal)
 # path = graph.a_star(start, goal)
-path = graph.branch_and_bound(start, goal)
+# path = graph.branch_and_bound(start, goal)
 
 if path is not None:
     print(path)
