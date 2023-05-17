@@ -112,6 +112,7 @@ class Graph:
         return None  # No path found
 
     def a_star(self, start, goal):
+
         open_set = [start]  # Nodes to be evaluated
         came_from = {}  # For each node, which node it can most efficiently be reached from
         g_score = {node: float('inf') for node in self.nodes}  # Cost of getting from start to each node
@@ -146,10 +147,12 @@ class Graph:
         return sum(s != g for s, g in zip(state, goal))  # Number of knights not in goal positions
 
     def reconstruct_path(self, came_from, current):
+
         path = [current]
         while current in came_from:
             current = came_from[current]
             path.insert(0, current)
+
         return path
 
     # Build graphs for 4 Knight and Test problems
@@ -247,7 +250,7 @@ graph = Graph()
 graph.build_solution_graph(build_all_states())
 start = (1, 3, 7, 9)
 goal = (9, 7, 3, 1)
-# path = graph.bfs(start, goal)
+path = graph.bfs(start, goal)
 # path = graph.a_star(start, goal)
 # path = graph.branch_and_bound(start, goal)
 
