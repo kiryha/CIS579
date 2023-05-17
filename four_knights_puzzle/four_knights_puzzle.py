@@ -1,4 +1,10 @@
 """
+CIS579
+First Assignment: The Four Knights puzzle
+Your first assignment is to write a program (in Lisp or another language) that allows you to compare the effectiveness
+of the A* search algorithm to that of traditional branch and bound search.
+The problem to be solved is a simplified version of the Four Knights puzzle.
+
 
 Visualize graph:
 
@@ -31,7 +37,7 @@ class Graph:
 
     def build_solution_graph(self, all_states):
         """
-        Create a graph for all possible moves in For Knights problem
+        Create a graph of all possible moves in For Knights problem
         """
 
         # Possible knight moves from each cell
@@ -60,6 +66,26 @@ class Graph:
                     new_state = tuple(new_state)
                     if new_state in all_states:
                         self.add_edge(state, new_state)
+
+    def build_solution_graph_test(self, all_states):
+        """
+        Create a graph of all possible moves in test problem
+        """
+
+        # Add all states as nodes to the graph
+        for state in all_states:
+            self.add_node(state)
+
+        # Add edges to the graph
+        for state in all_states:
+            for step in range(1, 6):  # The knight can move 1 to 5 steps
+                # # Knight moves to the left
+                # if state - step in all_states:
+                #     self.add_edge(state, state - step)
+
+                # Knight moves to the right
+                if state + step in all_states:
+                    self.add_edge(state, state + step)
 
     def add_node(self, node):
         if node not in self.nodes:
@@ -92,39 +118,94 @@ class Graph:
 
         return None  # No path found
 
+    def a_star(self, start, goal):
+        open_set = [start]  # Nodes to be evaluated
+        came_from = {}  # For each node, which node it can most efficiently be reached from
+        g_score = {node: float('inf') for node in self.nodes}  # Cost of getting from start to each node
+        g_score[start] = 0
+        f_score = {node: float('inf') for node in
+                   self.nodes}  # Estimated total cost from start to goal through each node
+        f_score[start] = self.heuristic(start, goal)
+
+        while open_set:
+            current = min(open_set, key=f_score.get)  # Node in open_set with lowest f_score[] value
+
+            if current == goal:
+                return self.reconstruct_path(came_from, current)
+
+            open_set.remove(current)
+            for neighbor in self.nodes[current]:
+                tentative_g_score = g_score[current] + 1  # Each edge has a cost of 1
+                if tentative_g_score < g_score[neighbor]:
+                    came_from[neighbor] = current
+                    g_score[neighbor] = tentative_g_score
+                    f_score[neighbor] = g_score[neighbor] + self.heuristic(neighbor, goal)
+                    if neighbor not in open_set:
+                        open_set.append(neighbor)
+
+        return None  # No path found
+
+    def heuristic(self, state, goal):
+        return sum(s != g for s, g in zip(state, goal))  # Number of knights not in goal positions
+
+    def reconstruct_path(self, came_from, current):
+        path = [current]
+        while current in came_from:
+            current = came_from[current]
+            path.insert(0, current)
+        return path
+
 
 def build_all_states():
+    """
+    Build list of all possible moves tuples in Four Knight Problem
 
-    all_states = []  # List to store all states
+    We use four nested loops to generate all possible combinations for the four knights
+    We form a set from the positions. In a set, duplicate values are not allowed.
+    If the length of the set is 4, it means all knights are on different squares.
+    The knights can't land on the center square, so we check if any knight is on square 5.
+    If all conditions are met, we append the state to the list of all states.
+    """
 
-    # We use four nested loops to generate all possible combinations for the four knights
+    all_states = []
+
     for a in range(1, 10):
         for b in range(1, 10):
             for c in range(1, 10):
                 for d in range(1, 10):
-
-                    # We form a set from the positions. In a set, duplicate values are not allowed.
-                    # If the length of the set is 4, it means all knights are on different squares.
                     if len({a, b, c, d}) == 4:
-
-                        # The knights can't land on the center square, so we check if any knight is on square 5.
                         if 5 not in [a, b, c, d]:
-                            # If all conditions are met, we append the state to the list of all states.
                             all_states.append((a, b, c, d))
+    return all_states
+
+
+def build_all_states_test():
+    """
+    Build list of all possible moves tuples for simple one-dimensional test case
+    [ * |  |  |  ]
+    """
+
+    all_states = []
+
+    for cell in range(1, 6):
+        all_states.append(cell)
 
     return all_states
 
 
 graph = Graph()
 graph.build_solution_graph(build_all_states())
-# print(graph.nodes)
-
-
 start = (1, 3, 7, 9)
 goal = (9, 7, 3, 1)
 path = graph.bfs(start, goal)
+# path = graph.a_star(start, goal)
 
 if path is not None:
-    print("Found a path:", path)
-else:
-    print("No path found.")
+    print(path)
+
+# # Test Graph
+# graph = Graph()
+# graph.build_solution_graph_test(build_all_states_test())
+# print(graph.nodes)
+# path = graph.bfs(1, 5)
+# print(path)
