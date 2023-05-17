@@ -6,7 +6,20 @@ of the A* search algorithm to that of traditional branch and bound search.
 The problem to be solved is a simplified version of the Four Knights puzzle.
 
 
-Visualize graph:
+# Test case.
+One dimensional field of 5 cells with one knight in first cell moving to the right only.
+Find a path from 1 to 5
+[ * |  |  |  |  ]
+
+# # Test Graph
+# graph = Graph()
+# graph.build_solution_graph_test(build_all_states_test())
+# print(graph.nodes)
+# path = graph.bfs(1, 5)
+# print(path)
+
+
+# Visualize graph:
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -118,6 +131,30 @@ class Graph:
 
         return None  # No path found
 
+    def branch_and_bound(self, start, goal):
+        visited = set()  # Set of visited nodes
+        queue = [(0, [start])]  # Queue for the nodes to visit, (0, [start]) is the initial path and cost
+
+        while queue:
+            cost, path = min(queue, key=lambda x: x[0])  # Get the path with minimum cost from the queue
+            queue.remove((cost, path))
+            node = path[-1]  # Get the last node from the path
+
+            if node == goal:
+                return path
+
+            if node not in visited:
+                visited.add(node)
+
+                for neighbor in self.nodes[node]:
+                    if neighbor not in visited:
+                        new_path = list(path)
+                        new_path.append(neighbor)
+                        new_cost = cost + 1  # Each edge has a cost of 1
+                        queue.append((new_cost, new_path))
+
+        return None  # No path found
+
     def a_star(self, start, goal):
         open_set = [start]  # Nodes to be evaluated
         came_from = {}  # For each node, which node it can most efficiently be reached from
@@ -182,7 +219,6 @@ def build_all_states():
 def build_all_states_test():
     """
     Build list of all possible moves tuples for simple one-dimensional test case
-    [ * |  |  |  ]
     """
 
     all_states = []
@@ -197,15 +233,9 @@ graph = Graph()
 graph.build_solution_graph(build_all_states())
 start = (1, 3, 7, 9)
 goal = (9, 7, 3, 1)
-path = graph.bfs(start, goal)
+# path = graph.bfs(start, goal)
 # path = graph.a_star(start, goal)
+path = graph.branch_and_bound(start, goal)
 
 if path is not None:
     print(path)
-
-# # Test Graph
-# graph = Graph()
-# graph.build_solution_graph_test(build_all_states_test())
-# print(graph.nodes)
-# path = graph.bfs(1, 5)
-# print(path)
