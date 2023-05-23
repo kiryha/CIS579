@@ -43,6 +43,8 @@ def draw_graph(graph):
 draw_graph(graph)
 """
 
+import math
+
 
 class Graph:
     def __init__(self):
@@ -145,6 +147,7 @@ class Graph:
 
         return None  # No path found
 
+    # The A* algorithms
     def a_star(self, start, goal):
         """
         The A* search algorithm
@@ -160,6 +163,9 @@ class Graph:
         # Estimated total cost from start to goal through each node
         f_score = {node: float('inf') for node in self.nodes}
         f_score[start] = self.heuristic(start, goal)
+        # f_score[start] = self.manhattan_distance(start, goal)
+        # f_score[start] = self.euclidean_distance(start, goal)
+        # f_score[start] = self.chebyshev_distance(start, goal)
 
         # Keep track of the number of nodes explored
         nodes_explored = 0
@@ -184,15 +190,6 @@ class Graph:
 
         return None  # No path found
 
-    def heuristic(self, state, goal):
-        """
-        Estimate of the number of moves required to reach the goal state from the current state.
-        """
-
-        heuristic = sum(s != g for s, g in zip(state, goal))
-
-        return heuristic
-
     def reconstruct_path(self, came_from, current):
 
         path = [current]
@@ -202,6 +199,28 @@ class Graph:
             path.insert(0, current)
 
         return path
+
+    # A* heuristics
+    def heuristic(self, state, goal):
+        """
+        Estimate of the number of moves required to reach the goal state from the current state.
+        """
+
+        heuristic = sum(s != g for s, g in zip(state, goal))
+
+        return heuristic
+
+    def manhattan_distance(self, state, goal):
+
+        return abs(state[0] - goal[0]) + abs(state[1] - goal[1])
+
+    def euclidean_distance(self, state, goal):
+
+        return math.sqrt((state[0] - goal[0]) ** 2 + (state[1] - goal[1]) ** 2)
+
+    def chebyshev_distance(self, state, goal):
+
+        return max(abs(state[0] - goal[0]), abs(state[1] - goal[1]))
 
     # Build graphs for 4 Knight and Test problems
     def build_solution_graph(self, all_states):
@@ -304,7 +323,7 @@ path = graph.bfs(start, goal)
 print(path)
 path = graph.dfs(start, goal)
 print(path)
-path = graph.a_star(start, goal)
-print(path)
 path = graph.branch_and_bound(start, goal)
+print(path)
+path = graph.a_star(start, goal)
 print(path)
