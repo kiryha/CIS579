@@ -60,6 +60,9 @@ class Graph:
 
     # Search algorithms
     def bfs(self, start, goal):
+        """
+        Breadth first search algorithm
+        """
         queue = [[start]]  # Queue for the nodes to visit, [[start]] is the initial path
         visited = {start}  # Set of visited nodes
         nodes_explored = 0  # Keep track of the number of nodes explored
@@ -84,7 +87,38 @@ class Graph:
 
         return None  # No path found
 
+    def dfs(self, start, goal):
+        """
+        Depth first search algorithm
+        """
+
+        stack = [[start]]
+        visited = {start}
+        nodes_explored = 0
+
+        while stack:
+            path = stack.pop()
+            node = path[-1]
+            nodes_explored += 1
+
+            if node == goal:
+                print(f"DFS explored {nodes_explored} nodes.")
+                return path
+
+            for next_node in self.nodes[node]:
+                if next_node not in visited:
+                    visited.add(next_node)
+                    new_path = list(path)
+                    new_path.append(next_node)
+                    stack.append(new_path)
+
+        return None
+
     def branch_and_bound(self, start, goal):
+        """
+        Branch and Bound algorithm
+        """
+
         queue = [(0, [start])]  # Queue for the nodes to visit, (0, [start]) is the initial path
         visited = {start}  # Set of visited nodes
         nodes_explored = 0  # Keep track of the number of nodes explored
@@ -112,15 +146,23 @@ class Graph:
         return None  # No path found
 
     def a_star(self, start, goal):
+        """
+        The A* search algorithm
+        """
 
-        open_set = [start]  # Nodes to be evaluated
-        came_from = {}  # For each node, which node it can most efficiently be reached from
-        g_score = {node: float('inf') for node in self.nodes}  # Cost of getting from start to each node
+        # Nodes to be evaluated
+        open_set = [start]
+        # For each node, which node it can most efficiently be reached from
+        came_from = {}
+        # Cost of getting from start to each node
+        g_score = {node: float('inf') for node in self.nodes}
         g_score[start] = 0
-        f_score = {node: float('inf') for node in
-                   self.nodes}  # Estimated total cost from start to goal through each node
+        # Estimated total cost from start to goal through each node
+        f_score = {node: float('inf') for node in self.nodes}
         f_score[start] = self.heuristic(start, goal)
-        nodes_explored = 0  # Keep track of the number of nodes explored
+
+        # Keep track of the number of nodes explored
+        nodes_explored = 0
 
         while open_set:
             current = min(open_set, key=f_score.get)  # Node in open_set with lowest f_score[] value
@@ -143,12 +185,18 @@ class Graph:
         return None  # No path found
 
     def heuristic(self, state, goal):
+        """
+        Estimate of the number of moves required to reach the goal state from the current state.
+        """
 
-        return sum(s != g for s, g in zip(state, goal))  # Number of knights not in goal positions
+        heuristic = sum(s != g for s, g in zip(state, goal))
+
+        return heuristic
 
     def reconstruct_path(self, came_from, current):
 
         path = [current]
+
         while current in came_from:
             current = came_from[current]
             path.insert(0, current)
@@ -246,13 +294,17 @@ def build_all_states_test():
     return all_states
 
 
+# Finding Solution
 graph = Graph()
 graph.build_solution_graph(build_all_states())
 start = (1, 3, 7, 9)
 goal = (9, 7, 3, 1)
-path = graph.bfs(start, goal)
-# path = graph.a_star(start, goal)
-# path = graph.branch_and_bound(start, goal)
 
-if path is not None:
-    print(path)
+path = graph.bfs(start, goal)
+print(path)
+path = graph.dfs(start, goal)
+print(path)
+path = graph.a_star(start, goal)
+print(path)
+path = graph.branch_and_bound(start, goal)
+print(path)
