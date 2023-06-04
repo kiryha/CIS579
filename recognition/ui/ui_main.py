@@ -17,7 +17,7 @@ class Ui_Recognizer(object):
     def setupUi(self, Recognizer):
         if not Recognizer.objectName():
             Recognizer.setObjectName(u"Recognizer")
-        Recognizer.resize(280, 429)
+        Recognizer.resize(295, 304)
         self.centralwidget = QWidget(Recognizer)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -72,6 +72,19 @@ class Ui_Recognizer(object):
 
         self.verticalLayout.addWidget(self.btnLoadImage)
 
+        self.splitter_3 = QSplitter(self.centralwidget)
+        self.splitter_3.setObjectName(u"splitter_3")
+        self.splitter_3.setOrientation(Qt.Horizontal)
+        self.label_3 = QLabel(self.splitter_3)
+        self.label_3.setObjectName(u"label_3")
+        self.splitter_3.addWidget(self.label_3)
+        self.linIndex = QLineEdit(self.splitter_3)
+        self.linIndex.setObjectName(u"linIndex")
+        self.linIndex.setMaximumSize(QSize(150, 16777215))
+        self.splitter_3.addWidget(self.linIndex)
+
+        self.verticalLayout.addWidget(self.splitter_3)
+
         self.btnRecognize = QPushButton(self.centralwidget)
         self.btnRecognize.setObjectName(u"btnRecognize")
         self.btnRecognize.setMinimumSize(QSize(0, 35))
@@ -85,7 +98,7 @@ class Ui_Recognizer(object):
         Recognizer.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(Recognizer)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 280, 21))
+        self.menubar.setGeometry(QRect(0, 0, 295, 21))
         Recognizer.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(Recognizer)
         self.statusbar.setObjectName(u"statusbar")
@@ -105,6 +118,8 @@ class Ui_Recognizer(object):
         self.btnTeach.setText(QCoreApplication.translate("Recognizer", u"Teach Model", None))
         self.labImage.setText("")
         self.btnLoadImage.setText(QCoreApplication.translate("Recognizer", u"Load Image", None))
+        self.label_3.setText(QCoreApplication.translate("Recognizer", u"Image index", None))
+        self.linIndex.setText(QCoreApplication.translate("Recognizer", u"1", None))
         self.btnRecognize.setText(QCoreApplication.translate("Recognizer", u"Recognize Image Number", None))
     # retranslateUi
 

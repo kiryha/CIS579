@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>280</width>
-    <height>429</height>
+    <width>295</width>
+    <height>304</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -102,6 +102,29 @@
      </widget>
     </item>
     <item>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Image index</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="linIndex">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
      <widget class="QPushButton" name="btnRecognize">
       <property name="minimumSize">
        <size>
@@ -134,7 +157,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>280</width>
+     <width>295</width>
      <height>21</height>
     </rect>
    </property>
