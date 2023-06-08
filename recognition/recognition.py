@@ -41,6 +41,8 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         self.b2 = None
         self.load_model()
 
+        # UI calls
+        self.btnLoadImage.clicked.connect(self.test)
         self.btnTeach.clicked.connect(self.teach_model)
         self.btnRecognize.clicked.connect(self.recognize)
 
@@ -182,6 +184,28 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         plt.show()
 
     # UI calls
+    def test(self):
+
+        rows, columns = self.data.shape
+        print(f'rows = {rows}, columns = {columns}')
+        data_train = self.data[1000:rows].T
+        Y_train = data_train[0]
+        X_train = data_train[1:columns]
+        X_train = X_train / 255.
+
+        current_image = X_train[:, 1, None]
+
+        print(f'current image = {current_image}')
+        print(f'current image type = {type(current_image)}')
+
+        current_image = current_image.reshape((28, 28)) * 255
+        print(f'current image = {current_image}')
+        print(f'current image type = {type(current_image)}')
+
+        plt.gray()
+        plt.imshow(current_image, interpolation='nearest')
+        plt.show()
+
     def teach_model(self):
 
         # print('Loading train.csv...')
