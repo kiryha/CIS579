@@ -50,16 +50,40 @@ def evaluateFitness(population):
     return avg_fitness, best_fitness
 
 
+def rouletteSelection(totalFitness, population):
+    """
+    Roulette-wheel sampling
+    """
+
+    # Generate a random number between 0 and total fitness
+    spin = random.uniform(0, totalFitness)
+    wheel_position = 0
+    # Go through the population
+    for genome in population:
+        # Add the individual's fitness to get the position on the wheel
+        wheel_position += fitness(genome)
+        # If the position on the wheel is greater than the random number, that's the selected individual
+        if wheel_position > spin:
+            return genome
+
+
 def selectPair(population):
     """
     Select and return two genomes from the given population using fitness-proportionate selection
-    """
 
+    Basic algorithm:
     weights = []
     for individual in population:
         weights.append(fitness(individual))
 
     return random.choices(population, weights=weights, k=2)
+    """
+
+    # Calculate total fitness of population
+    totalFitness = sum(fitness(genome) for genome in population)
+
+    # Return a pair of individuals selected with roulette wheel selection
+    return rouletteSelection(totalFitness, population), rouletteSelection(totalFitness, population)
 
 
 def crossover(genome1, genome2):
