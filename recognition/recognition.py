@@ -61,10 +61,10 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         # Model
         self.data = None  # MNIST csv
-        self.X_train = None  # Numbers data (array of floats for each pixel)
-        self.Y_train = None  # Number value (label): 0. 1, 2, 3, ... 9
-        self.X_dev = None
-        self.Y_dev = None
+        self.numbers_data_train = None  # Numbers data (array of floats for each pixel) for set of images
+        self.numbers_labels_train = None  # Number values (labels): 0. 1, 2, 3, ... 9 for set of images
+        self.numbers_data_dev = None
+        self.numbers_labels_dev = None
         self.W1_path = f'{root}/data/model/W1.csv'
         self.W2_path = f'{root}/data/model/W2.csv'
         self.b1_path = f'{root}/data/model/b1.csv'
@@ -103,13 +103,13 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         data_dev = self.data[0:1000].T
         data_train = self.data[1000:rows].T
 
-        self.Y_dev = data_dev[0]
-        self.X_dev = data_dev[1:columns]
-        self.X_dev = self.X_dev / 255.
+        self.numbers_labels_dev = data_dev[0]
+        self.numbers_data_dev = data_dev[1:columns]
+        self.numbers_data_dev = self.numbers_data_dev / 255.
 
-        self.Y_train = data_train[0]  # 784 items
-        self.X_train = data_train[1:columns]
-        self.X_train = self.X_train / 255.
+        self.numbers_labels_train = data_train[0]  # 784 items
+        self.numbers_data_train = data_train[1:columns]
+        self.numbers_data_train = self.numbers_data_train / 255.
 
         print('The train.csv loaded!')
 
@@ -205,14 +205,14 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         W1, b1, W2, b2 = self.init_parameters()
 
         for i in range(iterations):
-            Z1, A1, Z2, A2 = self.forward_propagation(W1, b1, W2, b2, self.X_train)
-            dW1, db1, dW2, db2 = self.backward_propagation(Z1, A1, Z2, A2, W1, W2, self.X_train, self.Y_train)
+            Z1, A1, Z2, A2 = self.forward_propagation(W1, b1, W2, b2, self.numbers_data_train)
+            dW1, db1, dW2, db2 = self.backward_propagation(Z1, A1, Z2, A2, W1, W2, self.numbers_data_train, self.numbers_labels_train)
             W1, b1, W2, b2 = self.update_parameters(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha)
 
             if i % 10 == 0:
                 print(f"Iteration: {i}")
                 predictions = self.get_predictions(A2)
-                print(f'Accuracy: {self.get_accuracy(predictions, self.Y_train)}')
+                print(f'Accuracy: {self.get_accuracy(predictions, self.numbers_labels_train)}')
 
         return W1, b1, W2, b2
 
@@ -258,9 +258,9 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         """
 
         # Get image data from MNIST
-        current_image = self.X_dev[:, index, None]
-        prediction = self.make_predictions(self.X_dev[:, index, None], self.W1, self.b1, self.W2, self.b2)
-        label = self.Y_dev[index]
+        current_image = self.numbers_data_dev[:, index, None]
+        prediction = self.make_predictions(self.numbers_data_dev[:, index, None], self.W1, self.b1, self.W2, self.b2)
+        label = self.numbers_labels_dev[index]
 
         # Report
         message = f'MNIST Number {label} recognized as {prediction[0]}'
