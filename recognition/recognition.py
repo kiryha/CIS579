@@ -52,6 +52,9 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         # Setup plot image display
         self.plot_widget = MatplotlibWidget(self)
         self.layImages.addWidget(self.plot_widget)
+        # Show random noise in UI
+        current_image = np.random.rand(100, 100)
+        self.update_plot(current_image)
 
         # Model
         self.data = None  # MNIST csv
@@ -76,9 +79,25 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         """
 
         print('Loading train.csv...')
+
+        # Load MNIST
         data_file = f"{root}/data/mnist/train.csv"
         data = pd.read_csv(data_file)
         self.data = np.array(data)
+
+        # Split into DEV and TRAIN sets
+        rows, columns = self.data.shape
+        data_dev = self.data[0:1000].T
+        data_train = self.data[1000:rows].T
+
+        self.Y_dev = data_dev[0]
+        self.X_dev = data_dev[1:columns]
+        self.X_dev = self.X_dev / 255.
+
+        self.Y_train = data_train[0]  # 784 items
+        self.X_train = data_train[1:columns]
+        self.X_train = self.X_train / 255.
+
         print('The train.csv loaded!')
 
         if not os.path.exists(self.W1_path):
@@ -168,19 +187,19 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         return W1, b1, W2, b2
 
-    def gradient_descent(self, X, Y, alpha, iterations):
+    def gradient_descent(self, alpha, iterations):
 
         W1, b1, W2, b2 = self.init_parameters()
 
         for i in range(iterations):
-            Z1, A1, Z2, A2 = self.forward_propagation(W1, b1, W2, b2, X)
-            dW1, db1, dW2, db2 = self.backward_propagation(Z1, A1, Z2, A2, W1, W2, X, Y)
+            Z1, A1, Z2, A2 = self.forward_propagation(W1, b1, W2, b2, self.X_train)
+            dW1, db1, dW2, db2 = self.backward_propagation(Z1, A1, Z2, A2, W1, W2, self.X_train, self.Y_train)
             W1, b1, W2, b2 = self.update_parameters(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha)
 
             if i % 10 == 0:
                 print(f"Iteration: {i}")
                 predictions = self.get_predictions(A2)
-                print(f'Accuracy: {self.get_accuracy(predictions, Y)}')
+                print(f'Accuracy: {self.get_accuracy(predictions, self.Y_train)}')
 
         return W1, b1, W2, b2
 
@@ -197,23 +216,12 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         Recognize custom JPG
         """
 
-        # rows, columns = self.data.shape
-        #
-        # data_dev = self.data[0:1000].T
-        # Y_dev = data_dev[0]
-        # X_dev = data_dev[1:columns]
-        # X_dev = X_dev / 255.
-        #
-        # current_image = X_dev[:, index, None]
-
         image_path = f'{root}/data/custom_images/1_01.jpg'
         img = Image.open(image_path)
         current_image = np.array(img)  # convert image to numpy array
         self.update_plot(current_image)
 
-
         prediction = self.make_predictions(current_image, self.W1, self.b1, self.W2, self.b2)
-        # label = Y_dev[index]
 
         # Report
         message = f'Number recognized as {prediction[0]}'
@@ -222,20 +230,13 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
     def recognize_mnist(self, index):
         """
-        Recognize image from training set by image data index
+        Recognize image from DEV set by image data index
         """
 
-        # Get DEV set from MNIST
-        rows, columns = self.data.shape
-        data_dev = self.data[0:1000].T
-        Y_dev = data_dev[0]
-        X_dev = data_dev[1:columns]
-        X_dev = X_dev / 255.
-
         # Get image data from MNIST
-        current_image = X_dev[:, index, None]
-        prediction = self.make_predictions(X_dev[:, index, None], self.W1, self.b1, self.W2, self.b2)
-        label = Y_dev[index]
+        current_image = self.X_dev[:, index, None]
+        prediction = self.make_predictions(self.X_dev[:, index, None], self.W1, self.b1, self.W2, self.b2)
+        label = self.Y_dev[index]
 
         # Report
         message = f'Number {label} recognized as {prediction[0]}'
@@ -252,9 +253,6 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         Load custom jpg
         """
 
-        # current_image = np.random.rand(100, 100)  # this is just a placeholder
-        # self.update_plot(current_image)
-
         image_path = f'{root}/data/custom_images/1_01.jpg'
         img = Image.open(image_path)
         current_image = np.array(img)  # convert image to numpy array
@@ -264,16 +262,9 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         self.statusbar.showMessage('Teaching model...')
 
-        # Get TRAIN set from MNIST
-        rows, columns = self.data.shape
-        data_train = self.data[1000:rows].T
-        Y_train = data_train[0]  # 784 items
-        X_train = data_train[1:columns]
-        X_train = X_train / 255.
-
         alfa = float(self.linAlfa.text())
         iterations = int(self.linIterations.text())
-        self.W1, self.b1, self.W2, self.b2 = self.gradient_descent(X_train, Y_train, alfa, iterations)
+        self.W1, self.b1, self.W2, self.b2 = self.gradient_descent(alfa, iterations)
 
         # Save data to CSV files
         np.savetxt(self.W1_path, self.W1, delimiter=',')
@@ -284,6 +275,8 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         self.statusbar.showMessage('Model trained and saved to files!')
 
     def recognize(self):
+
+        # TODO: implement switch to rcognize from DEV or custom image
 
         # Recognize image from MNIST
         self.recognize_mnist(int(self.linIndex.text()))
