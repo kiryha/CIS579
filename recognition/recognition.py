@@ -60,23 +60,23 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         # Model
         self.data = None  # MNIST csv
-        self.numbers_data_train = None  # Numbers data (array of floats for each pixel) for set of images
-        self.numbers_labels_train = None  # Number values (labels): 0. 1, 2, 3, ... 9 for set of images
+        self.numbers_data_train = None  # Numbers data (array of floats for each pixel) for TRAIN set of images
+        self.numbers_labels_train = None  # Number values (labels): 0. 1, 2, 3, ... 9 for TRAIN set of images
         self.numbers_data_dev = None
         self.numbers_labels_dev = None
         self.W1_path = f'{root}/data/model/W1.csv'
         self.W2_path = f'{root}/data/model/W2.csv'
         self.b1_path = f'{root}/data/model/b1.csv'
         self.b2_path = f'{root}/data/model/b2.csv'
-        self.W1 = None
-        self.b1 = None
-        self.W2 = None
-        self.b2 = None
+        self.W1 = None  # Weight matrix for the first layer
+        self.b1 = None  # Bias vector for the first layer
+        self.W2 = None  # Weight matrix for the second layer
+        self.b2 = None  # Bias vector for the second layer
         self.load_model()
 
         # UI calls
         self.btnLoadImage.clicked.connect(self.load_image)
-        self.btnTeach.clicked.connect(self.teach_model)
+        self.btnTeach.clicked.connect(self.train_model)
         self.btnRecognize.clicked.connect(self.recognize)
 
     def display_random(self):
@@ -159,26 +159,44 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         return one_hot_Y
 
     def get_predictions(self, A2):
+        """
+        Generates predicted labels (or outputs) based on the input data and the learned parameters of the model.
+
+        This function converts the output of the network
+        (which are probabilities in the case of a classification problem) into actual class predictions
+        by taking the class with the highest probability for each sample.
+        """
 
         return np.argmax(A2, 0)
 
-    def get_accuracy(self, predictions, Y):
+    def get_accuracy(self, predictions):
 
-        print(predictions, Y)
+        print(predictions, self.numbers_labels_train)
 
-        return np.sum(predictions == Y) / Y.size
+        return np.sum(predictions == self.numbers_labels_train) / self.numbers_labels_train.size
 
     # Propagation
     def forward_propagation(self, W1, b1, W2, b2, X):
+        """
+        Performs a forward propagation pass,
+        which computes the output of the model given the current parameters and the input data.
 
-        Z1 = W1.dot(X) + b1
-        A1 = self.rel_u(Z1)
-        Z2 = W2.dot(A1) + b2
-        A2 = self.softmax(Z2)
+        The forward propagation is the process by which the neural network uses the input data
+        and the learned parameters to compute its output
+        """
+
+        Z1 = W1.dot(X) + b1  # Result of the linear transformation of the input layer
+        A1 = self.rel_u(Z1)  # Result of applying the activation function to Z1
+        Z2 = W2.dot(A1) + b2  # Result of the linear transformation of the hidden layer (A1)
+        A2 = self.softmax(Z2)  # Result of applying the activation function to Z2
 
         return Z1, A1, Z2, A2
 
     def backward_propagation(self, Z1, A1, Z2, A2, W1, W2, X, Y):
+        """
+        Performs a backward propagation pass,
+        which computes the gradients of the loss function with respect to the parameters.
+        """
 
         m = Y.size
         one_hot_Y = self.one_hot(Y)
@@ -192,6 +210,10 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         return dW1, db1, dW2, db2
 
     def update_parameters(self, W1, b1, W2, b2, dW1, db1, dW2, db2, alpha):
+        """
+        Updates the parameters in the direction that decreases the loss function.
+        The size of the update is controlled by the learning rate alpha.
+        """
 
         W1 = W1 - alpha * dW1
         b1 = b1 - alpha * db1
@@ -201,8 +223,12 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         return W1, b1, W2, b2
 
     def gradient_descent(self, alpha, iterations):
+        """
+        Train neural network model by updating its parameters (weights and biases) iteratively
+        to minimize the loss function (difference between the model's predictions and the actual values).
+        """
 
-        W1, b1, W2, b2 = self.init_parameters()
+        W1, b1, W2, b2 = self.init_parameters()  # The trained weights and biases of the model
 
         for i in range(iterations):
             Z1, A1, Z2, A2 = self.forward_propagation(W1, b1, W2, b2, self.numbers_data_train)
@@ -212,12 +238,15 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
             if i % 10 == 0:
                 print(f"Iteration: {i}")
                 predictions = self.get_predictions(A2)
-                print(f'Accuracy: {self.get_accuracy(predictions, self.numbers_labels_train)}')
+                print(f'Accuracy: {self.get_accuracy(predictions)}')
 
         return W1, b1, W2, b2
 
     # Recognition
     def make_predictions(self, X, W1, b1, W2, b2):
+        """
+        Uses the trained weights and biases to make predictions on a given input dataset.
+        """
 
         _, _, _, A2 = self.forward_propagation(W1, b1, W2, b2, X)
         predictions = self.get_predictions(A2)
@@ -287,9 +316,9 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         self.custom_image_path = custom_image_path
         self.update_plot(np.array(Image.open(self.custom_image_path)))
 
-    def teach_model(self):
+    def train_model(self):
 
-        self.statusbar.showMessage('Teaching model...')
+        self.statusbar.showMessage('Training model...')
 
         alfa = float(self.linAlfa.text())
         iterations = int(self.linIterations.text())
