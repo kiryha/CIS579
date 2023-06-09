@@ -61,6 +61,10 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         # Model
         self.data = None  # MNIST csv
+        self.X_train = None  # Numbers data (array of floats for each pixel)
+        self.Y_train = None  # Number value (label): 0. 1, 2, 3, ... 9
+        self.X_dev = None
+        self.Y_dev = None
         self.W1_path = f'{root}/data/model/W1.csv'
         self.W2_path = f'{root}/data/model/W2.csv'
         self.b1_path = f'{root}/data/model/b1.csv'

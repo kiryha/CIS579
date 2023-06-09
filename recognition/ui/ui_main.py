@@ -115,9 +115,9 @@ class Ui_Recognizer(object):
         self.linAlfa.setText(QCoreApplication.translate("Recognizer", u"0.1", None))
         self.label_2.setText(QCoreApplication.translate("Recognizer", u"Iterations: ", None))
         self.linIterations.setText(QCoreApplication.translate("Recognizer", u"500", None))
-        self.btnTeach.setText(QCoreApplication.translate("Recognizer", u"Teach Model", None))
+        self.btnTeach.setText(QCoreApplication.translate("Recognizer", u"Train Model", None))
         self.btnLoadImage.setText(QCoreApplication.translate("Recognizer", u"Load Image", None))
-        self.label_3.setText(QCoreApplication.translate("Recognizer", u"Image index", None))
+        self.label_3.setText(QCoreApplication.translate("Recognizer", u"MNIST Image index", None))
         self.linIndex.setText(QCoreApplication.translate("Recognizer", u"1", None))
         self.btnRecognize.setText(QCoreApplication.translate("Recognizer", u"Recognize Image Number", None))
     # retranslateUi

@@ -70,7 +70,7 @@
        </size>
       </property>
       <property name="text">
-       <string>Teach Model</string>
+       <string>Train Model</string>
       </property>
      </widget>
     </item>
@@ -104,7 +104,7 @@
       </property>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Image index</string>
+        <string>MNIST Image index</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="linIndex">
