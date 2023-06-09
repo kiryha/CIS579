@@ -19,13 +19,12 @@ CSV file columns: label (digit), pixel 0, pixel 1, ... pixel 783
 import os
 import numpy as np
 import pandas as pd
-from matplotlib import pyplot as plt
-from PySide2 import QtWidgets, QtCore, QtGui
-from ui import ui_main
-
+from PySide2 import QtWidgets, QtGui
 from PIL import Image, ImageOps
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
+
+from ui import ui_main
 
 
 class MatplotlibWidget(QtWidgets.QWidget):
@@ -129,6 +128,7 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
     # ML functions
     def init_parameters(self):
+
         W1 = np.random.rand(10, 784) - 0.5
         b1 = np.random.rand(10, 1) - 0.5
         W2 = np.random.rand(10, 10) - 0.5
