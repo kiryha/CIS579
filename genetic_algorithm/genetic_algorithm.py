@@ -1,3 +1,4 @@
+import os
 import random
 
 
@@ -84,12 +85,13 @@ def mutate(genome, mutationRate):
     return genome
 
 
-def runGA(populationSize, genomeLength, crossoverRate, mutationRate, maxRuns):
+def runGA(populationSize, genomeLength, crossoverRate, mutationRate, statistics):
     """
     The Genetic Algorithm
     """
 
     # Initial population
+    maxRuns = 30  # Maximum number of generations that population will go through in a single run of the algorithm
     population = makePopulation(populationSize, genomeLength)
 
     # Run the genetic algorithm for a specified number of runs (generations)
@@ -97,7 +99,9 @@ def runGA(populationSize, genomeLength, crossoverRate, mutationRate, maxRuns):
 
         # At each generation, compute the average and best fitness in the current population
         avg_fitness, best_fitness = evaluateFitness(population)
-        print(f"Generation {run}: average fitness {avg_fitness:.2f}, best fitness {best_fitness:.2f}")
+        message = f"        Generation {run}: average fitness {avg_fitness:.2f}, best fitness {best_fitness:.2f}\n"
+        statistics.write(message)
+        # print(message)
 
         # If we find a genome with with all 1s, return the current run (generation)
         if best_fitness == genomeLength:  # we found the best individual
@@ -127,5 +131,42 @@ def runGA(populationSize, genomeLength, crossoverRate, mutationRate, maxRuns):
     return maxRuns
 
 
-output = runGA(50, 10, 0.7, 0.001, 30)
-print(output)
+# Execute 30 runs and compute the average generation
+def getAverageGenerations(populationSize, genomeLength, crossoverRate, mutationRate, statistics):
+
+    totalGenerations = 0
+
+    for run in range(30):
+        message = f'   GA execution number: {run}. GA data:\n'
+        statistics.write(message)
+        print(f'GA execution number: {run}')
+        generation = runGA(populationSize, genomeLength, crossoverRate, mutationRate, statistics)
+        message = f'   Number of generations to get best genome at execution number {run}: {generation}\n\n'
+        statistics.write(message)
+        print(f'Number of generations to get best genome {generation}')
+        totalGenerations += generation
+
+    averageGenerations = totalGenerations / 30
+
+    return averageGenerations
+
+
+if __name__ == "__main__":
+    root = os.path.dirname(os.path.abspath(__file__))
+    statistics_file = f'{root}/data/statistics.txt'
+
+    # Record GA data
+    with open(statistics_file, 'w') as statistics:
+        # Run with crossover rate 0.7
+        statistics.write(f'Crossover Rate 0.7\n')
+        print(f'Crossover Rate 0.7')
+        averageGenerations_07 = getAverageGenerations(50, 10, 0.7, 0.001, statistics)
+
+        # Run with crossover rate 0
+        statistics.write(f'Crossover Rate 0.0\n')
+        print(f'\n\nCrossover Rate 0.0')
+        averageGenerations_00 = getAverageGenerations(50, 10, 0, 0.001, statistics)
+
+        statistics.write('Summary:\n')
+        statistics.write(f'Average Generations for Crossover Rate 0.7 = {averageGenerations_07}\n')
+        statistics.write(f'Average Generations for Crossover Rate 0.0 = {averageGenerations_00}\n')
