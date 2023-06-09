@@ -14,6 +14,8 @@ CSV file columns: label (digit), pixel 0, pixel 1, ... pixel 783
     - backward propagation
     - update parameters
 """
+
+
 import os
 import numpy as np
 import pandas as pd
@@ -21,7 +23,7 @@ from matplotlib import pyplot as plt
 from PySide2 import QtWidgets, QtCore, QtGui
 from ui import ui_main
 
-from PIL import Image
+from PIL import Image, ImageOps
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
@@ -37,6 +39,7 @@ class MatplotlibWidget(QtWidgets.QWidget):
         self.layout.addWidget(self.canvas)
 
     def update_plot(self, image):
+
         self.ax.clear()
         self.ax.imshow(image, interpolation='nearest')
         self.ax.axis('off')
@@ -52,9 +55,9 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         # Setup plot image display
         self.plot_widget = MatplotlibWidget(self)
         self.layImages.addWidget(self.plot_widget)
-        # Show random noise in UI
-        current_image = np.random.rand(100, 100)
-        self.update_plot(current_image)
+        self.display_random()
+
+        self.custom_image_path = None
 
         # Model
         self.data = None  # MNIST csv
@@ -72,6 +75,12 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         self.btnLoadImage.clicked.connect(self.load_image)
         self.btnTeach.clicked.connect(self.teach_model)
         self.btnRecognize.clicked.connect(self.recognize)
+
+    def display_random(self):
+
+        # Show random noise in UI
+        current_image = np.random.rand(100, 100)
+        self.update_plot(current_image)
 
     def load_model(self):
         """
@@ -216,15 +225,26 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         Recognize custom JPG
         """
 
-        image_path = f'{root}/data/custom_images/1_01.jpg'
-        img = Image.open(image_path)
-        current_image = np.array(img)  # convert image to numpy array
-        self.update_plot(current_image)
+        if not self.custom_image_path:
+            self.statusbar.showMessage('Load custom Image first!')
+            return
 
-        prediction = self.make_predictions(current_image, self.W1, self.b1, self.W2, self.b2)
+        image_label = os.path.basename(self.custom_image_path).replace('.jpg', '')
+
+        # Convert image to proper array
+        custom_image = Image.open(self.custom_image_path)
+        custom_image = ImageOps.grayscale(custom_image)
+        custom_image = custom_image.resize((28, 28))
+        # Convert to numpy array and normalize
+        custom_image = np.array(custom_image) / 255.
+        # Flatten and reshape
+        custom_image = custom_image.flatten().reshape(-1, 1)  # result is of shape (784, 1)
+
+        # Recognize custom image
+        prediction = self.make_predictions(custom_image, self.W1, self.b1, self.W2, self.b2)
 
         # Report
-        message = f'Number recognized as {prediction[0]}'
+        message = f'Custom Number {image_label} recognized as {prediction[0]}'
         print(message)
         self.statusbar.showMessage(message)
 
@@ -235,12 +255,11 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         # Get image data from MNIST
         current_image = self.X_dev[:, index, None]
-        print(current_image)
         prediction = self.make_predictions(self.X_dev[:, index, None], self.W1, self.b1, self.W2, self.b2)
         label = self.Y_dev[index]
 
         # Report
-        message = f'Number {label} recognized as {prediction[0]}'
+        message = f'MNIST Number {label} recognized as {prediction[0]}'
         print(message)
         self.statusbar.showMessage(message)
 
@@ -254,10 +273,15 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         Load custom jpg
         """
 
-        image_path = f'{root}/data/custom_images/1_01.jpg'
-        img = Image.open(image_path)
-        current_image = np.array(img)  # convert image to numpy array
-        self.update_plot(current_image)
+        custom_image_path = QtWidgets.QFileDialog.getOpenFileName(self, 'Select Custom File', f'{root}/data/custom_images/', '*.jpg')[0]
+
+        if not custom_image_path:
+            self.custom_image_path = None
+            self.display_random()
+            return
+
+        self.custom_image_path = custom_image_path
+        self.update_plot(np.array(Image.open(self.custom_image_path)))
 
     def teach_model(self):
 
@@ -277,13 +301,12 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
     def recognize(self):
 
-        # TODO: implement switch to rcognize from DEV or custom image
-
-        # Recognize image from MNIST
-        self.recognize_mnist(int(self.linIndex.text()))
-
-        # Recognize custom image
-        # self.recognize_custom()
+        if self.custom_image_path:
+            # Recognize custom image
+            self.recognize_custom()
+        else:
+            # Recognize image from MNIST
+            self.recognize_mnist(int(self.linIndex.text()))
 
 
 if __name__ == "__main__":
