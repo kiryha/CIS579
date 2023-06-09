@@ -17,7 +17,7 @@ class Ui_Recognizer(object):
     def setupUi(self, Recognizer):
         if not Recognizer.objectName():
             Recognizer.setObjectName(u"Recognizer")
-        Recognizer.resize(295, 304)
+        Recognizer.resize(294, 538)
         self.centralwidget = QWidget(Recognizer)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -61,10 +61,10 @@ class Ui_Recognizer(object):
 
         self.verticalLayout.addWidget(self.line)
 
-        self.labImage = QLabel(self.centralwidget)
-        self.labImage.setObjectName(u"labImage")
+        self.layImages = QVBoxLayout()
+        self.layImages.setObjectName(u"layImages")
 
-        self.verticalLayout.addWidget(self.labImage)
+        self.verticalLayout.addLayout(self.layImages)
 
         self.btnLoadImage = QPushButton(self.centralwidget)
         self.btnLoadImage.setObjectName(u"btnLoadImage")
@@ -98,7 +98,7 @@ class Ui_Recognizer(object):
         Recognizer.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(Recognizer)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 295, 21))
+        self.menubar.setGeometry(QRect(0, 0, 294, 21))
         Recognizer.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(Recognizer)
         self.statusbar.setObjectName(u"statusbar")
@@ -116,7 +116,6 @@ class Ui_Recognizer(object):
         self.label_2.setText(QCoreApplication.translate("Recognizer", u"Iterations: ", None))
         self.linIterations.setText(QCoreApplication.translate("Recognizer", u"500", None))
         self.btnTeach.setText(QCoreApplication.translate("Recognizer", u"Teach Model", None))
-        self.labImage.setText("")
         self.btnLoadImage.setText(QCoreApplication.translate("Recognizer", u"Load Image", None))
         self.label_3.setText(QCoreApplication.translate("Recognizer", u"Image index", None))
         self.linIndex.setText(QCoreApplication.translate("Recognizer", u"1", None))

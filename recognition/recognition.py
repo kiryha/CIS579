@@ -21,13 +21,37 @@ from matplotlib import pyplot as plt
 from PySide2 import QtWidgets, QtCore, QtGui
 from ui import ui_main
 
-root = os.path.dirname(os.path.abspath(__file__))
+from PIL import Image
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+
+
+class MatplotlibWidget(QtWidgets.QWidget):
+    def __init__(self, parent=None):
+        super(MatplotlibWidget, self).__init__(parent)
+        self.figure = Figure(figsize=(5, 4), dpi=100)
+        self.canvas = FigureCanvas(self.figure)
+        self.ax = self.figure.add_subplot(111)
+        self.ax.axis('off')
+        self.layout = QtWidgets.QVBoxLayout(self)
+        self.layout.addWidget(self.canvas)
+
+    def update_plot(self, image):
+        self.ax.clear()
+        self.ax.imshow(image, interpolation='nearest')
+        self.ax.axis('off')
+        self.figure.subplots_adjust(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)  # remove margins
+        self.canvas.draw()
 
 
 class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
     def __init__(self):
         super(Recognizer, self).__init__()
         self.setupUi(self)
+
+        # Setup plot image display
+        self.plot_widget = MatplotlibWidget(self)
+        self.layImages.addWidget(self.plot_widget)
 
         # Model
         self.data = None  # MNIST csv
@@ -42,7 +66,7 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         self.load_model()
 
         # UI calls
-        self.btnLoadImage.clicked.connect(self.test)
+        self.btnLoadImage.clicked.connect(self.load_image)
         self.btnTeach.clicked.connect(self.teach_model)
         self.btnRecognize.clicked.connect(self.recognize)
 
@@ -66,6 +90,10 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         self.b1 = np.loadtxt(self.b1_path, delimiter=',')
         self.b2 = np.loadtxt(self.b2_path, delimiter=',')
         print('Data loaded!')
+
+    # Image Display
+    def update_plot(self, image):
+        self.plot_widget.update_plot(image)
 
     # ML functions
     def init_parameters(self):
@@ -164,66 +192,80 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         return predictions
 
-    def test_prediction(self, index):
+    def recognize_custom(self):
+        """
+        Recognize custom JPG
+        """
 
+        # rows, columns = self.data.shape
+        #
+        # data_dev = self.data[0:1000].T
+        # Y_dev = data_dev[0]
+        # X_dev = data_dev[1:columns]
+        # X_dev = X_dev / 255.
+        #
+        # current_image = X_dev[:, index, None]
+
+        image_path = f'{root}/data/custom_images/1_01.jpg'
+        img = Image.open(image_path)
+        current_image = np.array(img)  # convert image to numpy array
+        self.update_plot(current_image)
+
+
+        prediction = self.make_predictions(current_image, self.W1, self.b1, self.W2, self.b2)
+        # label = Y_dev[index]
+
+        # Report
+        message = f'Number recognized as {prediction[0]}'
+        print(message)
+        self.statusbar.showMessage(message)
+
+    def recognize_mnist(self, index):
+        """
+        Recognize image from training set by image data index
+        """
+
+        # Get DEV set from MNIST
         rows, columns = self.data.shape
-        data_train = self.data[1000:rows].T
-        Y_train = data_train[0]
-        X_train = data_train[1:columns]
-        X_train = X_train / 255.
-
-        current_image = X_train[:, index, None]
-        prediction = self.make_predictions(X_train[:, index, None], self.W1, self.b1, self.W2, self.b2)
-        label = Y_train[index]
-        print("Prediction: ", prediction[0])
-        print("Actual Number: ", label)
-
-        current_image = current_image.reshape((28, 28)) * 255
-        plt.gray()
-        plt.imshow(current_image, interpolation='nearest')
-        plt.show()
-
-    # UI calls
-    def test(self):
-
-        rows, columns = self.data.shape
-        print(f'rows = {rows}, columns = {columns}')
-        data_train = self.data[1000:rows].T
-        Y_train = data_train[0]
-        X_train = data_train[1:columns]
-        X_train = X_train / 255.
-
-        current_image = X_train[:, 1, None]
-
-        print(f'current image = {current_image}')
-        print(f'current image type = {type(current_image)}')
-
-        current_image = current_image.reshape((28, 28)) * 255
-        print(f'current image = {current_image}')
-        print(f'current image type = {type(current_image)}')
-
-        plt.gray()
-        plt.imshow(current_image, interpolation='nearest')
-        plt.show()
-
-    def teach_model(self):
-
-        # print('Loading train.csv...')
-        # data_file = f"{root}/data/mnist/train.csv"
-        # data = pd.read_csv(data_file)
-        # data = np.array(data)
-        # print('The train.csv loaded!')
-
-        rows, columns = self.data.shape
-        # Shuffle before splitting into dev and training sets
-        np.random.shuffle(self.data)
-
-        # Split all data into 2 sets, training and testing
         data_dev = self.data[0:1000].T
         Y_dev = data_dev[0]
         X_dev = data_dev[1:columns]
         X_dev = X_dev / 255.
 
+        # Get image data from MNIST
+        current_image = X_dev[:, index, None]
+        prediction = self.make_predictions(X_dev[:, index, None], self.W1, self.b1, self.W2, self.b2)
+        label = Y_dev[index]
+
+        # Report
+        message = f'Number {label} recognized as {prediction[0]}'
+        print(message)
+        self.statusbar.showMessage(message)
+
+        # Show image in UI
+        current_image = current_image.reshape((28, 28)) * 255
+        self.update_plot(current_image)
+
+    # UI calls
+    def load_image(self):
+        """
+        Load custom jpg
+        """
+
+        # current_image = np.random.rand(100, 100)  # this is just a placeholder
+        # self.update_plot(current_image)
+
+        image_path = f'{root}/data/custom_images/1_01.jpg'
+        img = Image.open(image_path)
+        current_image = np.array(img)  # convert image to numpy array
+        self.update_plot(current_image)
+
+    def teach_model(self):
+
+        self.statusbar.showMessage('Teaching model...')
+
+        # Get TRAIN set from MNIST
+        rows, columns = self.data.shape
         data_train = self.data[1000:rows].T
         Y_train = data_train[0]  # 784 items
         X_train = data_train[1:columns]
@@ -239,12 +281,20 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
         np.savetxt(self.b1_path, self.b1, delimiter=',')
         np.savetxt(self.b2_path, self.b2, delimiter=',')
 
+        self.statusbar.showMessage('Model trained and saved to files!')
+
     def recognize(self):
 
-        self.test_prediction(int(self.linIndex.text()))
+        # Recognize image from MNIST
+        self.recognize_mnist(int(self.linIndex.text()))
+
+        # Recognize custom image
+        # self.recognize_custom()
 
 
 if __name__ == "__main__":
+
+    root = os.path.dirname(os.path.abspath(__file__))
 
     app = QtWidgets.QApplication([])
     recognizer = Recognizer()

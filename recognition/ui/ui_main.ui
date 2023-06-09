@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>295</width>
-    <height>304</height>
+    <width>294</width>
+    <height>538</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -82,11 +82,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="labImage">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
+     <layout class="QVBoxLayout" name="layImages"/>
     </item>
     <item>
      <widget class="QPushButton" name="btnLoadImage">
@@ -157,7 +153,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>295</width>
+     <width>294</width>
      <height>21</height>
     </rect>
    </property>
