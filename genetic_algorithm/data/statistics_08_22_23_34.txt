@@ -1,0 +1,1607 @@
+Crossover Rate 0.7
+   GA execution number: 0. GA data:
+        Generation 0: average fitness 4.30, best fitness 8.00
+        Generation 1: average fitness 5.34, best fitness 8.00
+        Generation 2: average fitness 5.70, best fitness 8.00
+        Generation 3: average fitness 5.72, best fitness 8.00
+        Generation 4: average fitness 6.22, best fitness 8.00
+        Generation 5: average fitness 5.84, best fitness 8.00
+        Generation 6: average fitness 6.44, best fitness 7.00
+        Generation 7: average fitness 6.26, best fitness 8.00
+        Generation 8: average fitness 6.74, best fitness 9.00
+        Generation 9: average fitness 8.02, best fitness 9.00
+        Generation 10: average fitness 5.96, best fitness 8.00
+        Generation 11: average fitness 5.86, best fitness 9.00
+        Generation 12: average fitness 7.18, best fitness 9.00
+        Generation 13: average fitness 6.76, best fitness 9.00
+        Generation 14: average fitness 6.92, best fitness 8.00
+        Generation 15: average fitness 7.66, best fitness 9.00
+        Generation 16: average fitness 6.70, best fitness 8.00
+        Generation 17: average fitness 6.80, best fitness 8.00
+        Generation 18: average fitness 6.52, best fitness 8.00
+        Generation 19: average fitness 6.56, best fitness 8.00
+        Generation 20: average fitness 6.40, best fitness 7.00
+        Generation 21: average fitness 6.22, best fitness 7.00
+        Generation 22: average fitness 6.72, best fitness 7.00
+        Generation 23: average fitness 5.74, best fitness 8.00
+        Generation 24: average fitness 6.54, best fitness 7.00
+        Generation 25: average fitness 6.20, best fitness 7.00
+        Generation 26: average fitness 6.60, best fitness 7.00
+        Generation 27: average fitness 6.00, best fitness 6.00
+        Generation 28: average fitness 6.72, best fitness 7.00
+        Generation 29: average fitness 6.52, best fitness 7.00
+   Number of generations to get best genome at execution number 0: 30
+
+   GA execution number: 1. GA data:
+        Generation 0: average fitness 5.34, best fitness 9.00
+        Generation 1: average fitness 5.86, best fitness 9.00
+        Generation 2: average fitness 5.92, best fitness 7.00
+        Generation 3: average fitness 6.04, best fitness 7.00
+        Generation 4: average fitness 5.92, best fitness 8.00
+        Generation 5: average fitness 6.56, best fitness 9.00
+        Generation 6: average fitness 6.26, best fitness 9.00
+        Generation 7: average fitness 6.68, best fitness 8.00
+        Generation 8: average fitness 6.64, best fitness 8.00
+        Generation 9: average fitness 6.60, best fitness 8.00
+        Generation 10: average fitness 6.96, best fitness 9.00
+        Generation 11: average fitness 7.64, best fitness 9.00
+        Generation 12: average fitness 8.72, best fitness 10.00
+   Number of generations to get best genome at execution number 1: 12
+
+   GA execution number: 2. GA data:
+        Generation 0: average fitness 5.30, best fitness 9.00
+        Generation 1: average fitness 5.82, best fitness 9.00
+        Generation 2: average fitness 6.20, best fitness 9.00
+        Generation 3: average fitness 6.22, best fitness 9.00
+        Generation 4: average fitness 6.78, best fitness 9.00
+        Generation 5: average fitness 7.14, best fitness 9.00
+        Generation 6: average fitness 6.16, best fitness 10.00
+   Number of generations to get best genome at execution number 2: 6
+
+   GA execution number: 3. GA data:
+        Generation 0: average fitness 5.34, best fitness 8.00
+        Generation 1: average fitness 5.84, best fitness 9.00
+        Generation 2: average fitness 6.28, best fitness 9.00
+        Generation 3: average fitness 6.54, best fitness 9.00
+        Generation 4: average fitness 7.54, best fitness 8.00
+        Generation 5: average fitness 7.52, best fitness 8.00
+        Generation 6: average fitness 6.66, best fitness 10.00
+   Number of generations to get best genome at execution number 3: 6
+
+   GA execution number: 4. GA data:
+        Generation 0: average fitness 4.86, best fitness 8.00
+        Generation 1: average fitness 5.00, best fitness 8.00
+        Generation 2: average fitness 5.46, best fitness 10.00
+   Number of generations to get best genome at execution number 4: 2
+
+   GA execution number: 5. GA data:
+        Generation 0: average fitness 4.72, best fitness 9.00
+        Generation 1: average fitness 5.20, best fitness 9.00
+        Generation 2: average fitness 5.66, best fitness 8.00
+        Generation 3: average fitness 6.22, best fitness 8.00
+        Generation 4: average fitness 6.04, best fitness 8.00
+        Generation 5: average fitness 6.36, best fitness 8.00
+        Generation 6: average fitness 5.70, best fitness 8.00
+        Generation 7: average fitness 5.86, best fitness 7.00
+        Generation 8: average fitness 4.80, best fitness 7.00
+        Generation 9: average fitness 5.16, best fitness 7.00
+        Generation 10: average fitness 5.52, best fitness 7.00
+        Generation 11: average fitness 6.00, best fitness 8.00
+        Generation 12: average fitness 6.38, best fitness 8.00
+        Generation 13: average fitness 5.62, best fitness 8.00
+        Generation 14: average fitness 5.72, best fitness 8.00
+        Generation 15: average fitness 6.66, best fitness 7.00
+        Generation 16: average fitness 6.66, best fitness 7.00
+        Generation 17: average fitness 6.70, best fitness 7.00
+        Generation 18: average fitness 5.56, best fitness 8.00
+        Generation 19: average fitness 5.48, best fitness 7.00
+        Generation 20: average fitness 6.16, best fitness 8.00
+        Generation 21: average fitness 7.20, best fitness 8.00
+        Generation 22: average fitness 6.34, best fitness 9.00
+        Generation 23: average fitness 6.18, best fitness 8.00
+        Generation 24: average fitness 6.04, best fitness 7.00
+        Generation 25: average fitness 6.52, best fitness 7.00
+        Generation 26: average fitness 7.50, best fitness 8.00
+        Generation 27: average fitness 7.90, best fitness 8.00
+        Generation 28: average fitness 7.90, best fitness 8.00
+        Generation 29: average fitness 6.22, best fitness 8.00
+   Number of generations to get best genome at execution number 5: 30
+
+   GA execution number: 6. GA data:
+        Generation 0: average fitness 5.30, best fitness 9.00
+        Generation 1: average fitness 6.18, best fitness 9.00
+        Generation 2: average fitness 6.78, best fitness 9.00
+        Generation 3: average fitness 7.28, best fitness 9.00
+        Generation 4: average fitness 7.24, best fitness 9.00
+        Generation 5: average fitness 6.66, best fitness 8.00
+        Generation 6: average fitness 7.08, best fitness 9.00
+        Generation 7: average fitness 7.30, best fitness 8.00
+        Generation 8: average fitness 7.58, best fitness 9.00
+        Generation 9: average fitness 7.84, best fitness 9.00
+        Generation 10: average fitness 6.46, best fitness 9.00
+        Generation 11: average fitness 7.96, best fitness 9.00
+        Generation 12: average fitness 7.14, best fitness 8.00
+        Generation 13: average fitness 6.64, best fitness 9.00
+        Generation 14: average fitness 6.54, best fitness 8.00
+        Generation 15: average fitness 7.08, best fitness 8.00
+        Generation 16: average fitness 6.84, best fitness 8.00
+        Generation 17: average fitness 7.08, best fitness 8.00
+        Generation 18: average fitness 7.50, best fitness 9.00
+        Generation 19: average fitness 5.98, best fitness 10.00
+   Number of generations to get best genome at execution number 6: 19
+
+   GA execution number: 7. GA data:
+        Generation 0: average fitness 4.92, best fitness 7.00
+        Generation 1: average fitness 5.18, best fitness 8.00
+        Generation 2: average fitness 5.82, best fitness 8.00
+        Generation 3: average fitness 5.80, best fitness 8.00
+        Generation 4: average fitness 5.44, best fitness 8.00
+        Generation 5: average fitness 5.04, best fitness 7.00
+        Generation 6: average fitness 5.10, best fitness 7.00
+        Generation 7: average fitness 4.90, best fitness 7.00
+        Generation 8: average fitness 5.14, best fitness 9.00
+        Generation 9: average fitness 5.02, best fitness 7.00
+        Generation 10: average fitness 5.24, best fitness 6.00
+        Generation 11: average fitness 5.16, best fitness 7.00
+        Generation 12: average fitness 4.98, best fitness 7.00
+        Generation 13: average fitness 4.68, best fitness 6.00
+        Generation 14: average fitness 5.12, best fitness 6.00
+        Generation 15: average fitness 5.18, best fitness 8.00
+        Generation 16: average fitness 4.98, best fitness 6.00
+        Generation 17: average fitness 5.64, best fitness 7.00
+        Generation 18: average fitness 5.60, best fitness 7.00
+        Generation 19: average fitness 5.64, best fitness 7.00
+        Generation 20: average fitness 3.84, best fitness 6.00
+        Generation 21: average fitness 4.78, best fitness 5.00
+        Generation 22: average fitness 5.82, best fitness 6.00
+        Generation 23: average fitness 5.76, best fitness 6.00
+        Generation 24: average fitness 4.72, best fitness 6.00
+        Generation 25: average fitness 5.00, best fitness 5.00
+        Generation 26: average fitness 5.72, best fitness 6.00
+        Generation 27: average fitness 6.00, best fitness 6.00
+        Generation 28: average fitness 6.00, best fitness 6.00
+        Generation 29: average fitness 4.68, best fitness 6.00
+   Number of generations to get best genome at execution number 7: 30
+
+   GA execution number: 8. GA data:
+        Generation 0: average fitness 4.72, best fitness 8.00
+        Generation 1: average fitness 5.44, best fitness 7.00
+        Generation 2: average fitness 5.96, best fitness 8.00
+        Generation 3: average fitness 6.10, best fitness 7.00
+        Generation 4: average fitness 6.12, best fitness 8.00
+        Generation 5: average fitness 5.78, best fitness 7.00
+        Generation 6: average fitness 5.86, best fitness 7.00
+        Generation 7: average fitness 6.26, best fitness 8.00
+        Generation 8: average fitness 6.60, best fitness 9.00
+        Generation 9: average fitness 6.38, best fitness 8.00
+        Generation 10: average fitness 6.02, best fitness 8.00
+        Generation 11: average fitness 6.04, best fitness 7.00
+        Generation 12: average fitness 5.96, best fitness 7.00
+        Generation 13: average fitness 6.66, best fitness 8.00
+        Generation 14: average fitness 6.00, best fitness 7.00
+        Generation 15: average fitness 5.88, best fitness 7.00
+        Generation 16: average fitness 5.98, best fitness 7.00
+        Generation 17: average fitness 5.32, best fitness 7.00
+        Generation 18: average fitness 5.72, best fitness 7.00
+        Generation 19: average fitness 6.80, best fitness 7.00
+        Generation 20: average fitness 6.98, best fitness 7.00
+        Generation 21: average fitness 6.00, best fitness 6.00
+        Generation 22: average fitness 6.00, best fitness 6.00
+        Generation 23: average fitness 6.00, best fitness 6.00
+        Generation 24: average fitness 6.00, best fitness 6.00
+        Generation 25: average fitness 7.00, best fitness 7.00
+        Generation 26: average fitness 7.00, best fitness 7.00
+        Generation 27: average fitness 7.00, best fitness 7.00
+        Generation 28: average fitness 6.00, best fitness 6.00
+        Generation 29: average fitness 8.00, best fitness 8.00
+   Number of generations to get best genome at execution number 8: 30
+
+   GA execution number: 9. GA data:
+        Generation 0: average fitness 5.00, best fitness 9.00
+        Generation 1: average fitness 5.80, best fitness 9.00
+        Generation 2: average fitness 6.16, best fitness 9.00
+        Generation 3: average fitness 6.52, best fitness 10.00
+   Number of generations to get best genome at execution number 9: 3
+
+   GA execution number: 10. GA data:
+        Generation 0: average fitness 4.94, best fitness 8.00
+        Generation 1: average fitness 4.92, best fitness 8.00
+        Generation 2: average fitness 5.52, best fitness 8.00
+        Generation 3: average fitness 5.20, best fitness 7.00
+        Generation 4: average fitness 5.32, best fitness 9.00
+        Generation 5: average fitness 5.12, best fitness 7.00
+        Generation 6: average fitness 5.68, best fitness 8.00
+        Generation 7: average fitness 5.92, best fitness 8.00
+        Generation 8: average fitness 5.16, best fitness 7.00
+        Generation 9: average fitness 5.50, best fitness 7.00
+        Generation 10: average fitness 5.54, best fitness 7.00
+        Generation 11: average fitness 5.36, best fitness 8.00
+        Generation 12: average fitness 5.66, best fitness 8.00
+        Generation 13: average fitness 5.70, best fitness 8.00
+        Generation 14: average fitness 5.44, best fitness 8.00
+        Generation 15: average fitness 5.42, best fitness 8.00
+        Generation 16: average fitness 6.00, best fitness 8.00
+        Generation 17: average fitness 6.62, best fitness 8.00
+        Generation 18: average fitness 6.58, best fitness 7.00
+        Generation 19: average fitness 7.32, best fitness 8.00
+        Generation 20: average fitness 7.68, best fitness 8.00
+        Generation 21: average fitness 7.18, best fitness 8.00
+        Generation 22: average fitness 6.36, best fitness 9.00
+        Generation 23: average fitness 7.14, best fitness 8.00
+        Generation 24: average fitness 7.22, best fitness 8.00
+        Generation 25: average fitness 6.60, best fitness 9.00
+        Generation 26: average fitness 6.80, best fitness 8.00
+        Generation 27: average fitness 7.48, best fitness 8.00
+        Generation 28: average fitness 6.72, best fitness 7.00
+        Generation 29: average fitness 6.00, best fitness 6.00
+   Number of generations to get best genome at execution number 10: 30
+
+   GA execution number: 11. GA data:
+        Generation 0: average fitness 5.38, best fitness 9.00
+        Generation 1: average fitness 5.78, best fitness 9.00
+        Generation 2: average fitness 5.76, best fitness 9.00
+        Generation 3: average fitness 6.12, best fitness 8.00
+        Generation 4: average fitness 6.66, best fitness 9.00
+        Generation 5: average fitness 6.40, best fitness 9.00
+        Generation 6: average fitness 6.28, best fitness 8.00
+        Generation 7: average fitness 7.32, best fitness 8.00
+        Generation 8: average fitness 7.30, best fitness 8.00
+        Generation 9: average fitness 6.06, best fitness 7.00
+        Generation 10: average fitness 6.28, best fitness 8.00
+        Generation 11: average fitness 5.92, best fitness 9.00
+        Generation 12: average fitness 6.36, best fitness 9.00
+        Generation 13: average fitness 6.86, best fitness 8.00
+        Generation 14: average fitness 6.74, best fitness 8.00
+        Generation 15: average fitness 6.84, best fitness 8.00
+        Generation 16: average fitness 5.14, best fitness 7.00
+        Generation 17: average fitness 4.50, best fitness 6.00
+        Generation 18: average fitness 4.08, best fitness 6.00
+        Generation 19: average fitness 4.56, best fitness 5.00
+        Generation 20: average fitness 5.20, best fitness 6.00
+        Generation 21: average fitness 5.32, best fitness 7.00
+        Generation 22: average fitness 5.84, best fitness 7.00
+        Generation 23: average fitness 6.32, best fitness 7.00
+        Generation 24: average fitness 5.60, best fitness 6.00
+        Generation 25: average fitness 5.70, best fitness 6.00
+        Generation 26: average fitness 5.48, best fitness 7.00
+        Generation 27: average fitness 5.28, best fitness 8.00
+        Generation 28: average fitness 6.74, best fitness 8.00
+        Generation 29: average fitness 6.20, best fitness 8.00
+   Number of generations to get best genome at execution number 11: 30
+
+   GA execution number: 12. GA data:
+        Generation 0: average fitness 5.02, best fitness 9.00
+        Generation 1: average fitness 5.38, best fitness 8.00
+        Generation 2: average fitness 5.72, best fitness 8.00
+        Generation 3: average fitness 6.14, best fitness 10.00
+   Number of generations to get best genome at execution number 12: 3
+
+   GA execution number: 13. GA data:
+        Generation 0: average fitness 5.34, best fitness 9.00
+        Generation 1: average fitness 5.26, best fitness 9.00
+        Generation 2: average fitness 6.04, best fitness 9.00
+        Generation 3: average fitness 5.86, best fitness 9.00
+        Generation 4: average fitness 6.02, best fitness 10.00
+   Number of generations to get best genome at execution number 13: 4
+
+   GA execution number: 14. GA data:
+        Generation 0: average fitness 5.32, best fitness 10.00
+   Number of generations to get best genome at execution number 14: 0
+
+   GA execution number: 15. GA data:
+        Generation 0: average fitness 5.20, best fitness 9.00
+        Generation 1: average fitness 5.34, best fitness 8.00
+        Generation 2: average fitness 5.82, best fitness 10.00
+   Number of generations to get best genome at execution number 15: 2
+
+   GA execution number: 16. GA data:
+        Generation 0: average fitness 4.78, best fitness 8.00
+        Generation 1: average fitness 5.30, best fitness 9.00
+        Generation 2: average fitness 5.78, best fitness 8.00
+        Generation 3: average fitness 5.76, best fitness 8.00
+        Generation 4: average fitness 5.84, best fitness 8.00
+        Generation 5: average fitness 6.14, best fitness 8.00
+        Generation 6: average fitness 6.10, best fitness 8.00
+        Generation 7: average fitness 6.12, best fitness 8.00
+        Generation 8: average fitness 6.52, best fitness 8.00
+        Generation 9: average fitness 7.06, best fitness 9.00
+        Generation 10: average fitness 7.42, best fitness 9.00
+        Generation 11: average fitness 6.88, best fitness 8.00
+        Generation 12: average fitness 6.96, best fitness 9.00
+        Generation 13: average fitness 7.52, best fitness 8.00
+        Generation 14: average fitness 8.74, best fitness 10.00
+   Number of generations to get best genome at execution number 16: 14
+
+   GA execution number: 17. GA data:
+        Generation 0: average fitness 5.18, best fitness 9.00
+        Generation 1: average fitness 5.66, best fitness 9.00
+        Generation 2: average fitness 5.54, best fitness 8.00
+        Generation 3: average fitness 5.44, best fitness 9.00
+        Generation 4: average fitness 6.06, best fitness 8.00
+        Generation 5: average fitness 6.50, best fitness 8.00
+        Generation 6: average fitness 6.48, best fitness 9.00
+        Generation 7: average fitness 7.34, best fitness 10.00
+   Number of generations to get best genome at execution number 17: 7
+
+   GA execution number: 18. GA data:
+        Generation 0: average fitness 4.82, best fitness 8.00
+        Generation 1: average fitness 5.08, best fitness 8.00
+        Generation 2: average fitness 5.40, best fitness 7.00
+        Generation 3: average fitness 5.80, best fitness 8.00
+        Generation 4: average fitness 5.96, best fitness 8.00
+        Generation 5: average fitness 6.10, best fitness 8.00
+        Generation 6: average fitness 6.32, best fitness 8.00
+        Generation 7: average fitness 6.22, best fitness 8.00
+        Generation 8: average fitness 6.20, best fitness 8.00
+        Generation 9: average fitness 5.96, best fitness 8.00
+        Generation 10: average fitness 6.02, best fitness 8.00
+        Generation 11: average fitness 6.40, best fitness 8.00
+        Generation 12: average fitness 6.38, best fitness 8.00
+        Generation 13: average fitness 6.52, best fitness 7.00
+        Generation 14: average fitness 7.48, best fitness 9.00
+        Generation 15: average fitness 5.94, best fitness 8.00
+        Generation 16: average fitness 6.94, best fitness 7.00
+        Generation 17: average fitness 6.88, best fitness 8.00
+        Generation 18: average fitness 7.50, best fitness 9.00
+        Generation 19: average fitness 7.52, best fitness 9.00
+        Generation 20: average fitness 8.12, best fitness 9.00
+        Generation 21: average fitness 6.56, best fitness 9.00
+        Generation 22: average fitness 7.92, best fitness 8.00
+        Generation 23: average fitness 7.98, best fitness 8.00
+        Generation 24: average fitness 8.00, best fitness 8.00
+        Generation 25: average fitness 7.64, best fitness 8.00
+        Generation 26: average fitness 7.00, best fitness 7.00
+        Generation 27: average fitness 7.00, best fitness 7.00
+        Generation 28: average fitness 7.40, best fitness 8.00
+        Generation 29: average fitness 6.26, best fitness 7.00
+   Number of generations to get best genome at execution number 18: 30
+
+   GA execution number: 19. GA data:
+        Generation 0: average fitness 5.20, best fitness 9.00
+        Generation 1: average fitness 5.80, best fitness 9.00
+        Generation 2: average fitness 6.00, best fitness 8.00
+        Generation 3: average fitness 6.10, best fitness 8.00
+        Generation 4: average fitness 6.70, best fitness 8.00
+        Generation 5: average fitness 6.72, best fitness 8.00
+        Generation 6: average fitness 6.62, best fitness 8.00
+        Generation 7: average fitness 6.64, best fitness 9.00
+        Generation 8: average fitness 6.70, best fitness 9.00
+        Generation 9: average fitness 6.80, best fitness 8.00
+        Generation 10: average fitness 6.92, best fitness 9.00
+        Generation 11: average fitness 8.40, best fitness 10.00
+   Number of generations to get best genome at execution number 19: 11
+
+   GA execution number: 20. GA data:
+        Generation 0: average fitness 5.32, best fitness 9.00
+        Generation 1: average fitness 5.34, best fitness 8.00
+        Generation 2: average fitness 5.50, best fitness 8.00
+        Generation 3: average fitness 5.64, best fitness 7.00
+        Generation 4: average fitness 5.90, best fitness 8.00
+        Generation 5: average fitness 6.46, best fitness 8.00
+        Generation 6: average fitness 6.68, best fitness 8.00
+        Generation 7: average fitness 6.74, best fitness 8.00
+        Generation 8: average fitness 6.96, best fitness 8.00
+        Generation 9: average fitness 6.50, best fitness 8.00
+        Generation 10: average fitness 6.34, best fitness 8.00
+        Generation 11: average fitness 6.12, best fitness 7.00
+        Generation 12: average fitness 5.84, best fitness 7.00
+        Generation 13: average fitness 6.32, best fitness 8.00
+        Generation 14: average fitness 6.44, best fitness 8.00
+        Generation 15: average fitness 6.82, best fitness 8.00
+        Generation 16: average fitness 7.36, best fitness 8.00
+        Generation 17: average fitness 7.66, best fitness 8.00
+        Generation 18: average fitness 7.54, best fitness 9.00
+        Generation 19: average fitness 7.52, best fitness 8.00
+        Generation 20: average fitness 6.68, best fitness 9.00
+        Generation 21: average fitness 7.08, best fitness 9.00
+        Generation 22: average fitness 6.50, best fitness 7.00
+        Generation 23: average fitness 7.00, best fitness 7.00
+        Generation 24: average fitness 7.00, best fitness 7.00
+        Generation 25: average fitness 6.70, best fitness 7.00
+        Generation 26: average fitness 6.62, best fitness 7.00
+        Generation 27: average fitness 6.40, best fitness 7.00
+        Generation 28: average fitness 7.72, best fitness 8.00
+        Generation 29: average fitness 8.46, best fitness 9.00
+   Number of generations to get best genome at execution number 20: 30
+
+   GA execution number: 21. GA data:
+        Generation 0: average fitness 5.04, best fitness 8.00
+        Generation 1: average fitness 5.16, best fitness 8.00
+        Generation 2: average fitness 5.74, best fitness 8.00
+        Generation 3: average fitness 5.84, best fitness 8.00
+        Generation 4: average fitness 6.50, best fitness 8.00
+        Generation 5: average fitness 6.12, best fitness 8.00
+        Generation 6: average fitness 5.46, best fitness 9.00
+        Generation 7: average fitness 5.60, best fitness 9.00
+        Generation 8: average fitness 5.98, best fitness 10.00
+   Number of generations to get best genome at execution number 21: 8
+
+   GA execution number: 22. GA data:
+        Generation 0: average fitness 5.00, best fitness 8.00
+        Generation 1: average fitness 5.30, best fitness 8.00
+        Generation 2: average fitness 5.80, best fitness 9.00
+        Generation 3: average fitness 6.34, best fitness 9.00
+        Generation 4: average fitness 6.26, best fitness 7.00
+        Generation 5: average fitness 6.12, best fitness 8.00
+        Generation 6: average fitness 6.36, best fitness 8.00
+        Generation 7: average fitness 6.36, best fitness 8.00
+        Generation 8: average fitness 6.16, best fitness 7.00
+        Generation 9: average fitness 6.28, best fitness 9.00
+        Generation 10: average fitness 6.28, best fitness 7.00
+        Generation 11: average fitness 6.78, best fitness 8.00
+        Generation 12: average fitness 7.64, best fitness 9.00
+        Generation 13: average fitness 7.46, best fitness 9.00
+        Generation 14: average fitness 8.04, best fitness 9.00
+        Generation 15: average fitness 8.08, best fitness 9.00
+        Generation 16: average fitness 8.04, best fitness 9.00
+        Generation 17: average fitness 7.86, best fitness 8.00
+        Generation 18: average fitness 8.52, best fitness 9.00
+        Generation 19: average fitness 6.76, best fitness 9.00
+        Generation 20: average fitness 7.42, best fitness 9.00
+        Generation 21: average fitness 8.52, best fitness 10.00
+   Number of generations to get best genome at execution number 22: 21
+
+   GA execution number: 23. GA data:
+        Generation 0: average fitness 5.24, best fitness 8.00
+        Generation 1: average fitness 6.02, best fitness 8.00
+        Generation 2: average fitness 6.20, best fitness 8.00
+        Generation 3: average fitness 6.10, best fitness 9.00
+        Generation 4: average fitness 6.28, best fitness 8.00
+        Generation 5: average fitness 6.38, best fitness 9.00
+        Generation 6: average fitness 6.38, best fitness 8.00
+        Generation 7: average fitness 6.52, best fitness 8.00
+        Generation 8: average fitness 6.52, best fitness 8.00
+        Generation 9: average fitness 7.06, best fitness 8.00
+        Generation 10: average fitness 6.98, best fitness 9.00
+        Generation 11: average fitness 5.62, best fitness 7.00
+        Generation 12: average fitness 6.12, best fitness 9.00
+        Generation 13: average fitness 5.70, best fitness 8.00
+        Generation 14: average fitness 5.38, best fitness 9.00
+        Generation 15: average fitness 7.42, best fitness 9.00
+        Generation 16: average fitness 6.42, best fitness 7.00
+        Generation 17: average fitness 6.22, best fitness 9.00
+        Generation 18: average fitness 6.46, best fitness 8.00
+        Generation 19: average fitness 6.82, best fitness 8.00
+        Generation 20: average fitness 6.90, best fitness 7.00
+        Generation 21: average fitness 6.08, best fitness 7.00
+        Generation 22: average fitness 6.28, best fitness 7.00
+        Generation 23: average fitness 7.36, best fitness 8.00
+        Generation 24: average fitness 6.28, best fitness 8.00
+        Generation 25: average fitness 6.16, best fitness 7.00
+        Generation 26: average fitness 6.16, best fitness 7.00
+        Generation 27: average fitness 7.00, best fitness 7.00
+        Generation 28: average fitness 6.22, best fitness 7.00
+        Generation 29: average fitness 8.60, best fitness 9.00
+   Number of generations to get best genome at execution number 23: 30
+
+   GA execution number: 24. GA data:
+        Generation 0: average fitness 5.08, best fitness 8.00
+        Generation 1: average fitness 5.50, best fitness 8.00
+        Generation 2: average fitness 5.90, best fitness 7.00
+        Generation 3: average fitness 6.30, best fitness 8.00
+        Generation 4: average fitness 6.28, best fitness 8.00
+        Generation 5: average fitness 7.02, best fitness 9.00
+        Generation 6: average fitness 5.72, best fitness 8.00
+        Generation 7: average fitness 6.54, best fitness 9.00
+        Generation 8: average fitness 5.68, best fitness 7.00
+        Generation 9: average fitness 5.74, best fitness 8.00
+        Generation 10: average fitness 5.96, best fitness 8.00
+        Generation 11: average fitness 5.80, best fitness 7.00
+        Generation 12: average fitness 5.82, best fitness 6.00
+        Generation 13: average fitness 5.62, best fitness 7.00
+        Generation 14: average fitness 6.14, best fitness 8.00
+        Generation 15: average fitness 6.28, best fitness 9.00
+        Generation 16: average fitness 6.66, best fitness 8.00
+        Generation 17: average fitness 5.90, best fitness 7.00
+        Generation 18: average fitness 5.94, best fitness 7.00
+        Generation 19: average fitness 5.24, best fitness 6.00
+        Generation 20: average fitness 6.78, best fitness 8.00
+        Generation 21: average fitness 6.38, best fitness 7.00
+        Generation 22: average fitness 5.52, best fitness 7.00
+        Generation 23: average fitness 6.48, best fitness 7.00
+        Generation 24: average fitness 4.58, best fitness 8.00
+        Generation 25: average fitness 5.16, best fitness 7.00
+        Generation 26: average fitness 5.12, best fitness 7.00
+        Generation 27: average fitness 5.64, best fitness 9.00
+        Generation 28: average fitness 4.72, best fitness 8.00
+        Generation 29: average fitness 5.62, best fitness 8.00
+   Number of generations to get best genome at execution number 24: 30
+
+   GA execution number: 25. GA data:
+        Generation 0: average fitness 5.08, best fitness 9.00
+        Generation 1: average fitness 5.94, best fitness 9.00
+        Generation 2: average fitness 6.16, best fitness 9.00
+        Generation 3: average fitness 6.24, best fitness 8.00
+        Generation 4: average fitness 6.44, best fitness 9.00
+        Generation 5: average fitness 6.26, best fitness 9.00
+        Generation 6: average fitness 6.62, best fitness 8.00
+        Generation 7: average fitness 6.92, best fitness 8.00
+        Generation 8: average fitness 6.96, best fitness 8.00
+        Generation 9: average fitness 7.18, best fitness 8.00
+        Generation 10: average fitness 7.08, best fitness 9.00
+        Generation 11: average fitness 7.44, best fitness 8.00
+        Generation 12: average fitness 7.66, best fitness 8.00
+        Generation 13: average fitness 6.34, best fitness 9.00
+        Generation 14: average fitness 6.78, best fitness 7.00
+        Generation 15: average fitness 5.96, best fitness 8.00
+        Generation 16: average fitness 5.96, best fitness 7.00
+        Generation 17: average fitness 6.08, best fitness 8.00
+        Generation 18: average fitness 6.06, best fitness 7.00
+        Generation 19: average fitness 6.20, best fitness 9.00
+        Generation 20: average fitness 6.00, best fitness 6.00
+        Generation 21: average fitness 6.00, best fitness 6.00
+        Generation 22: average fitness 5.88, best fitness 6.00
+        Generation 23: average fitness 5.80, best fitness 6.00
+        Generation 24: average fitness 4.48, best fitness 8.00
+        Generation 25: average fitness 5.10, best fitness 7.00
+        Generation 26: average fitness 5.90, best fitness 8.00
+        Generation 27: average fitness 6.56, best fitness 7.00
+        Generation 28: average fitness 6.30, best fitness 7.00
+        Generation 29: average fitness 5.54, best fitness 6.00
+   Number of generations to get best genome at execution number 25: 30
+
+   GA execution number: 26. GA data:
+        Generation 0: average fitness 4.86, best fitness 9.00
+        Generation 1: average fitness 5.28, best fitness 8.00
+        Generation 2: average fitness 5.80, best fitness 8.00
+        Generation 3: average fitness 5.96, best fitness 9.00
+        Generation 4: average fitness 6.54, best fitness 9.00
+        Generation 5: average fitness 6.06, best fitness 9.00
+        Generation 6: average fitness 6.04, best fitness 9.00
+        Generation 7: average fitness 6.36, best fitness 9.00
+        Generation 8: average fitness 7.04, best fitness 9.00
+        Generation 9: average fitness 7.10, best fitness 8.00
+        Generation 10: average fitness 6.94, best fitness 9.00
+        Generation 11: average fitness 7.46, best fitness 8.00
+        Generation 12: average fitness 6.42, best fitness 8.00
+        Generation 13: average fitness 6.70, best fitness 8.00
+        Generation 14: average fitness 6.16, best fitness 8.00
+        Generation 15: average fitness 6.86, best fitness 9.00
+        Generation 16: average fitness 6.40, best fitness 9.00
+        Generation 17: average fitness 6.22, best fitness 8.00
+        Generation 18: average fitness 6.40, best fitness 8.00
+        Generation 19: average fitness 6.44, best fitness 9.00
+        Generation 20: average fitness 7.14, best fitness 9.00
+        Generation 21: average fitness 7.68, best fitness 9.00
+        Generation 22: average fitness 6.84, best fitness 7.00
+        Generation 23: average fitness 5.90, best fitness 7.00
+        Generation 24: average fitness 5.40, best fitness 7.00
+        Generation 25: average fitness 7.54, best fitness 8.00
+        Generation 26: average fitness 7.72, best fitness 8.00
+        Generation 27: average fitness 7.12, best fitness 8.00
+        Generation 28: average fitness 6.30, best fitness 9.00
+        Generation 29: average fitness 6.12, best fitness 8.00
+   Number of generations to get best genome at execution number 26: 30
+
+   GA execution number: 27. GA data:
+        Generation 0: average fitness 5.10, best fitness 8.00
+        Generation 1: average fitness 5.72, best fitness 9.00
+        Generation 2: average fitness 6.42, best fitness 8.00
+        Generation 3: average fitness 6.80, best fitness 9.00
+        Generation 4: average fitness 6.70, best fitness 9.00
+        Generation 5: average fitness 7.14, best fitness 9.00
+        Generation 6: average fitness 6.74, best fitness 9.00
+        Generation 7: average fitness 7.22, best fitness 9.00
+        Generation 8: average fitness 7.10, best fitness 9.00
+        Generation 9: average fitness 7.04, best fitness 9.00
+        Generation 10: average fitness 8.36, best fitness 9.00
+        Generation 11: average fitness 7.32, best fitness 9.00
+        Generation 12: average fitness 7.64, best fitness 9.00
+        Generation 13: average fitness 8.08, best fitness 10.00
+   Number of generations to get best genome at execution number 27: 13
+
+   GA execution number: 28. GA data:
+        Generation 0: average fitness 4.54, best fitness 8.00
+        Generation 1: average fitness 4.92, best fitness 9.00
+        Generation 2: average fitness 5.44, best fitness 9.00
+        Generation 3: average fitness 5.82, best fitness 8.00
+        Generation 4: average fitness 5.84, best fitness 8.00
+        Generation 5: average fitness 5.96, best fitness 8.00
+        Generation 6: average fitness 6.38, best fitness 8.00
+        Generation 7: average fitness 6.06, best fitness 7.00
+        Generation 8: average fitness 7.18, best fitness 9.00
+        Generation 9: average fitness 6.42, best fitness 9.00
+        Generation 10: average fitness 6.00, best fitness 9.00
+        Generation 11: average fitness 5.84, best fitness 8.00
+        Generation 12: average fitness 6.54, best fitness 9.00
+        Generation 13: average fitness 8.00, best fitness 9.00
+        Generation 14: average fitness 7.28, best fitness 8.00
+        Generation 15: average fitness 7.64, best fitness 8.00
+        Generation 16: average fitness 7.74, best fitness 8.00
+        Generation 17: average fitness 7.88, best fitness 9.00
+        Generation 18: average fitness 8.30, best fitness 10.00
+   Number of generations to get best genome at execution number 28: 18
+
+   GA execution number: 29. GA data:
+        Generation 0: average fitness 5.02, best fitness 8.00
+        Generation 1: average fitness 6.04, best fitness 9.00
+        Generation 2: average fitness 6.44, best fitness 9.00
+        Generation 3: average fitness 6.02, best fitness 9.00
+        Generation 4: average fitness 6.44, best fitness 9.00
+        Generation 5: average fitness 6.68, best fitness 8.00
+        Generation 6: average fitness 6.36, best fitness 9.00
+        Generation 7: average fitness 6.60, best fitness 7.00
+        Generation 8: average fitness 5.82, best fitness 8.00
+        Generation 9: average fitness 6.26, best fitness 7.00
+        Generation 10: average fitness 5.96, best fitness 8.00
+        Generation 11: average fitness 6.26, best fitness 9.00
+        Generation 12: average fitness 6.16, best fitness 9.00
+        Generation 13: average fitness 6.30, best fitness 7.00
+        Generation 14: average fitness 6.22, best fitness 7.00
+        Generation 15: average fitness 6.72, best fitness 7.00
+        Generation 16: average fitness 5.98, best fitness 7.00
+        Generation 17: average fitness 5.96, best fitness 9.00
+        Generation 18: average fitness 5.48, best fitness 7.00
+        Generation 19: average fitness 6.00, best fitness 7.00
+        Generation 20: average fitness 5.16, best fitness 6.00
+        Generation 21: average fitness 5.24, best fitness 7.00
+        Generation 22: average fitness 5.78, best fitness 7.00
+        Generation 23: average fitness 4.84, best fitness 7.00
+        Generation 24: average fitness 4.30, best fitness 5.00
+        Generation 25: average fitness 4.24, best fitness 5.00
+        Generation 26: average fitness 4.44, best fitness 5.00
+        Generation 27: average fitness 4.92, best fitness 5.00
+        Generation 28: average fitness 5.34, best fitness 6.00
+        Generation 29: average fitness 5.00, best fitness 5.00
+   Number of generations to get best genome at execution number 29: 30
+
+Crossover Rate 0.0
+   GA execution number: 0. GA data:
+        Generation 0: average fitness 5.22, best fitness 8.00
+        Generation 1: average fitness 5.98, best fitness 8.00
+        Generation 2: average fitness 6.18, best fitness 8.00
+        Generation 3: average fitness 6.22, best fitness 8.00
+        Generation 4: average fitness 6.34, best fitness 8.00
+        Generation 5: average fitness 6.46, best fitness 8.00
+        Generation 6: average fitness 6.12, best fitness 8.00
+        Generation 7: average fitness 6.48, best fitness 8.00
+        Generation 8: average fitness 6.58, best fitness 8.00
+        Generation 9: average fitness 6.72, best fitness 8.00
+        Generation 10: average fitness 6.32, best fitness 7.00
+        Generation 11: average fitness 6.22, best fitness 7.00
+        Generation 12: average fitness 6.22, best fitness 7.00
+        Generation 13: average fitness 6.66, best fitness 7.00
+        Generation 14: average fitness 6.26, best fitness 7.00
+        Generation 15: average fitness 6.38, best fitness 7.00
+        Generation 16: average fitness 6.38, best fitness 7.00
+        Generation 17: average fitness 6.42, best fitness 7.00
+        Generation 18: average fitness 6.56, best fitness 7.00
+        Generation 19: average fitness 6.68, best fitness 7.00
+        Generation 20: average fitness 5.96, best fitness 6.00
+        Generation 21: average fitness 6.82, best fitness 7.00
+        Generation 22: average fitness 6.92, best fitness 7.00
+        Generation 23: average fitness 6.94, best fitness 7.00
+        Generation 24: average fitness 7.80, best fitness 8.00
+        Generation 25: average fitness 6.88, best fitness 7.00
+        Generation 26: average fitness 6.96, best fitness 7.00
+        Generation 27: average fitness 6.96, best fitness 7.00
+        Generation 28: average fitness 6.00, best fitness 6.00
+        Generation 29: average fitness 5.96, best fitness 6.00
+   Number of generations to get best genome at execution number 0: 30
+
+   GA execution number: 1. GA data:
+        Generation 0: average fitness 5.00, best fitness 9.00
+        Generation 1: average fitness 5.18, best fitness 9.00
+        Generation 2: average fitness 5.20, best fitness 9.00
+        Generation 3: average fitness 5.78, best fitness 9.00
+        Generation 4: average fitness 6.70, best fitness 9.00
+        Generation 5: average fitness 7.24, best fitness 9.00
+        Generation 6: average fitness 7.74, best fitness 9.00
+        Generation 7: average fitness 7.74, best fitness 9.00
+        Generation 8: average fitness 7.14, best fitness 9.00
+        Generation 9: average fitness 7.36, best fitness 9.00
+        Generation 10: average fitness 7.52, best fitness 9.00
+        Generation 11: average fitness 7.56, best fitness 9.00
+        Generation 12: average fitness 7.88, best fitness 9.00
+        Generation 13: average fitness 7.68, best fitness 9.00
+        Generation 14: average fitness 8.70, best fitness 10.00
+   Number of generations to get best genome at execution number 1: 14
+
+   GA execution number: 2. GA data:
+        Generation 0: average fitness 4.60, best fitness 9.00
+        Generation 1: average fitness 5.30, best fitness 9.00
+        Generation 2: average fitness 5.88, best fitness 9.00
+        Generation 3: average fitness 5.98, best fitness 8.00
+        Generation 4: average fitness 6.28, best fitness 8.00
+        Generation 5: average fitness 6.40, best fitness 8.00
+        Generation 6: average fitness 6.66, best fitness 8.00
+        Generation 7: average fitness 6.80, best fitness 8.00
+        Generation 8: average fitness 6.84, best fitness 8.00
+        Generation 9: average fitness 7.08, best fitness 8.00
+        Generation 10: average fitness 7.20, best fitness 9.00
+        Generation 11: average fitness 7.26, best fitness 9.00
+        Generation 12: average fitness 7.34, best fitness 9.00
+        Generation 13: average fitness 7.88, best fitness 9.00
+        Generation 14: average fitness 8.06, best fitness 9.00
+        Generation 15: average fitness 8.14, best fitness 9.00
+        Generation 16: average fitness 8.24, best fitness 9.00
+        Generation 17: average fitness 8.64, best fitness 9.00
+        Generation 18: average fitness 8.64, best fitness 9.00
+        Generation 19: average fitness 8.00, best fitness 8.00
+        Generation 20: average fitness 8.00, best fitness 8.00
+        Generation 21: average fitness 8.00, best fitness 8.00
+        Generation 22: average fitness 7.20, best fitness 8.00
+        Generation 23: average fitness 7.16, best fitness 8.00
+        Generation 24: average fitness 6.36, best fitness 8.00
+        Generation 25: average fitness 6.32, best fitness 8.00
+        Generation 26: average fitness 7.22, best fitness 8.00
+        Generation 27: average fitness 7.76, best fitness 9.00
+        Generation 28: average fitness 7.80, best fitness 9.00
+        Generation 29: average fitness 8.00, best fitness 9.00
+   Number of generations to get best genome at execution number 2: 30
+
+   GA execution number: 3. GA data:
+        Generation 0: average fitness 4.84, best fitness 8.00
+        Generation 1: average fitness 5.10, best fitness 8.00
+        Generation 2: average fitness 5.44, best fitness 8.00
+        Generation 3: average fitness 6.14, best fitness 8.00
+        Generation 4: average fitness 6.50, best fitness 8.00
+        Generation 5: average fitness 6.48, best fitness 8.00
+        Generation 6: average fitness 6.60, best fitness 8.00
+        Generation 7: average fitness 7.04, best fitness 8.00
+        Generation 8: average fitness 7.02, best fitness 8.00
+        Generation 9: average fitness 7.36, best fitness 8.00
+        Generation 10: average fitness 7.46, best fitness 8.00
+        Generation 11: average fitness 7.20, best fitness 8.00
+        Generation 12: average fitness 7.20, best fitness 8.00
+        Generation 13: average fitness 7.18, best fitness 8.00
+        Generation 14: average fitness 7.36, best fitness 8.00
+        Generation 15: average fitness 7.46, best fitness 8.00
+        Generation 16: average fitness 7.52, best fitness 8.00
+        Generation 17: average fitness 6.86, best fitness 7.00
+        Generation 18: average fitness 6.26, best fitness 7.00
+        Generation 19: average fitness 6.00, best fitness 6.00
+        Generation 20: average fitness 6.00, best fitness 6.00
+        Generation 21: average fitness 6.00, best fitness 6.00
+        Generation 22: average fitness 6.00, best fitness 6.00
+        Generation 23: average fitness 6.00, best fitness 6.00
+        Generation 24: average fitness 5.52, best fitness 6.00
+        Generation 25: average fitness 5.40, best fitness 6.00
+        Generation 26: average fitness 5.46, best fitness 6.00
+        Generation 27: average fitness 5.08, best fitness 6.00
+        Generation 28: average fitness 5.16, best fitness 6.00
+        Generation 29: average fitness 5.36, best fitness 6.00
+   Number of generations to get best genome at execution number 3: 30
+
+   GA execution number: 4. GA data:
+        Generation 0: average fitness 5.22, best fitness 8.00
+        Generation 1: average fitness 6.22, best fitness 8.00
+        Generation 2: average fitness 6.76, best fitness 8.00
+        Generation 3: average fitness 6.52, best fitness 8.00
+        Generation 4: average fitness 6.78, best fitness 8.00
+        Generation 5: average fitness 7.26, best fitness 9.00
+        Generation 6: average fitness 7.58, best fitness 9.00
+        Generation 7: average fitness 7.62, best fitness 9.00
+        Generation 8: average fitness 7.90, best fitness 9.00
+        Generation 9: average fitness 7.92, best fitness 9.00
+        Generation 10: average fitness 8.30, best fitness 9.00
+        Generation 11: average fitness 8.40, best fitness 9.00
+        Generation 12: average fitness 8.56, best fitness 9.00
+        Generation 13: average fitness 8.00, best fitness 8.00
+        Generation 14: average fitness 8.00, best fitness 8.00
+        Generation 15: average fitness 7.82, best fitness 9.00
+        Generation 16: average fitness 7.62, best fitness 9.00
+        Generation 17: average fitness 7.38, best fitness 8.00
+        Generation 18: average fitness 7.32, best fitness 8.00
+        Generation 19: average fitness 7.50, best fitness 9.00
+        Generation 20: average fitness 6.76, best fitness 9.00
+        Generation 21: average fitness 6.86, best fitness 9.00
+        Generation 22: average fitness 7.26, best fitness 9.00
+        Generation 23: average fitness 6.78, best fitness 9.00
+        Generation 24: average fitness 6.84, best fitness 9.00
+        Generation 25: average fitness 7.44, best fitness 9.00
+        Generation 26: average fitness 6.92, best fitness 8.00
+        Generation 27: average fitness 7.10, best fitness 8.00
+        Generation 28: average fitness 7.18, best fitness 8.00
+        Generation 29: average fitness 7.22, best fitness 8.00
+   Number of generations to get best genome at execution number 4: 30
+
+   GA execution number: 5. GA data:
+        Generation 0: average fitness 4.94, best fitness 8.00
+        Generation 1: average fitness 5.64, best fitness 8.00
+        Generation 2: average fitness 5.82, best fitness 8.00
+        Generation 3: average fitness 6.00, best fitness 8.00
+        Generation 4: average fitness 6.28, best fitness 8.00
+        Generation 5: average fitness 6.60, best fitness 8.00
+        Generation 6: average fitness 6.78, best fitness 8.00
+        Generation 7: average fitness 7.06, best fitness 8.00
+        Generation 8: average fitness 6.62, best fitness 8.00
+        Generation 9: average fitness 6.82, best fitness 8.00
+        Generation 10: average fitness 6.78, best fitness 8.00
+        Generation 11: average fitness 7.14, best fitness 8.00
+        Generation 12: average fitness 7.30, best fitness 8.00
+        Generation 13: average fitness 6.34, best fitness 7.00
+        Generation 14: average fitness 6.36, best fitness 7.00
+        Generation 15: average fitness 6.24, best fitness 7.00
+        Generation 16: average fitness 6.32, best fitness 7.00
+        Generation 17: average fitness 6.50, best fitness 7.00
+        Generation 18: average fitness 6.42, best fitness 7.00
+        Generation 19: average fitness 6.34, best fitness 7.00
+        Generation 20: average fitness 6.44, best fitness 7.00
+        Generation 21: average fitness 6.66, best fitness 7.00
+        Generation 22: average fitness 6.78, best fitness 7.00
+        Generation 23: average fitness 6.00, best fitness 6.00
+        Generation 24: average fitness 6.00, best fitness 6.00
+        Generation 25: average fitness 6.00, best fitness 6.00
+        Generation 26: average fitness 6.00, best fitness 6.00
+        Generation 27: average fitness 5.70, best fitness 6.00
+        Generation 28: average fitness 5.72, best fitness 6.00
+        Generation 29: average fitness 5.70, best fitness 6.00
+   Number of generations to get best genome at execution number 5: 30
+
+   GA execution number: 6. GA data:
+        Generation 0: average fitness 5.00, best fitness 9.00
+        Generation 1: average fitness 5.72, best fitness 9.00
+        Generation 2: average fitness 6.28, best fitness 9.00
+        Generation 3: average fitness 6.74, best fitness 8.00
+        Generation 4: average fitness 7.10, best fitness 8.00
+        Generation 5: average fitness 7.16, best fitness 8.00
+        Generation 6: average fitness 7.30, best fitness 8.00
+        Generation 7: average fitness 7.24, best fitness 8.00
+        Generation 8: average fitness 7.42, best fitness 8.00
+        Generation 9: average fitness 6.98, best fitness 8.00
+        Generation 10: average fitness 7.36, best fitness 8.00
+        Generation 11: average fitness 7.50, best fitness 8.00
+        Generation 12: average fitness 6.20, best fitness 8.00
+        Generation 13: average fitness 5.50, best fitness 8.00
+        Generation 14: average fitness 5.64, best fitness 8.00
+        Generation 15: average fitness 6.14, best fitness 8.00
+        Generation 16: average fitness 6.38, best fitness 8.00
+        Generation 17: average fitness 6.26, best fitness 7.00
+        Generation 18: average fitness 6.64, best fitness 7.00
+        Generation 19: average fitness 6.78, best fitness 7.00
+        Generation 20: average fitness 5.86, best fitness 6.00
+        Generation 21: average fitness 5.96, best fitness 6.00
+        Generation 22: average fitness 5.00, best fitness 5.00
+        Generation 23: average fitness 6.00, best fitness 6.00
+        Generation 24: average fitness 6.00, best fitness 6.00
+        Generation 25: average fitness 6.00, best fitness 6.00
+        Generation 26: average fitness 5.00, best fitness 5.00
+        Generation 27: average fitness 5.00, best fitness 5.00
+        Generation 28: average fitness 5.00, best fitness 5.00
+        Generation 29: average fitness 5.00, best fitness 5.00
+   Number of generations to get best genome at execution number 6: 30
+
+   GA execution number: 7. GA data:
+        Generation 0: average fitness 4.96, best fitness 9.00
+        Generation 1: average fitness 5.44, best fitness 9.00
+        Generation 2: average fitness 5.84, best fitness 9.00
+        Generation 3: average fitness 6.02, best fitness 9.00
+        Generation 4: average fitness 6.48, best fitness 9.00
+        Generation 5: average fitness 6.30, best fitness 9.00
+        Generation 6: average fitness 6.82, best fitness 9.00
+        Generation 7: average fitness 6.76, best fitness 9.00
+        Generation 8: average fitness 6.92, best fitness 9.00
+        Generation 9: average fitness 7.50, best fitness 9.00
+        Generation 10: average fitness 6.94, best fitness 8.00
+        Generation 11: average fitness 7.14, best fitness 8.00
+        Generation 12: average fitness 7.28, best fitness 8.00
+        Generation 13: average fitness 6.76, best fitness 7.00
+        Generation 14: average fitness 6.78, best fitness 7.00
+        Generation 15: average fitness 7.72, best fitness 8.00
+        Generation 16: average fitness 8.76, best fitness 9.00
+        Generation 17: average fitness 7.88, best fitness 8.00
+        Generation 18: average fitness 7.96, best fitness 8.00
+        Generation 19: average fitness 8.00, best fitness 8.00
+        Generation 20: average fitness 7.00, best fitness 7.00
+        Generation 21: average fitness 5.00, best fitness 5.00
+        Generation 22: average fitness 5.00, best fitness 5.00
+        Generation 23: average fitness 6.00, best fitness 6.00
+        Generation 24: average fitness 6.00, best fitness 6.00
+        Generation 25: average fitness 6.00, best fitness 6.00
+        Generation 26: average fitness 6.00, best fitness 6.00
+        Generation 27: average fitness 7.00, best fitness 7.00
+        Generation 28: average fitness 8.00, best fitness 8.00
+        Generation 29: average fitness 9.00, best fitness 9.00
+   Number of generations to get best genome at execution number 7: 30
+
+   GA execution number: 8. GA data:
+        Generation 0: average fitness 5.14, best fitness 8.00
+        Generation 1: average fitness 6.28, best fitness 8.00
+        Generation 2: average fitness 6.86, best fitness 8.00
+        Generation 3: average fitness 6.94, best fitness 8.00
+        Generation 4: average fitness 6.88, best fitness 8.00
+        Generation 5: average fitness 7.02, best fitness 8.00
+        Generation 6: average fitness 7.08, best fitness 9.00
+        Generation 7: average fitness 7.10, best fitness 9.00
+        Generation 8: average fitness 7.48, best fitness 9.00
+        Generation 9: average fitness 7.40, best fitness 9.00
+        Generation 10: average fitness 7.82, best fitness 9.00
+        Generation 11: average fitness 7.66, best fitness 9.00
+        Generation 12: average fitness 7.96, best fitness 10.00
+   Number of generations to get best genome at execution number 8: 12
+
+   GA execution number: 9. GA data:
+        Generation 0: average fitness 4.72, best fitness 8.00
+        Generation 1: average fitness 5.32, best fitness 8.00
+        Generation 2: average fitness 5.96, best fitness 8.00
+        Generation 3: average fitness 6.58, best fitness 8.00
+        Generation 4: average fitness 6.66, best fitness 8.00
+        Generation 5: average fitness 6.54, best fitness 8.00
+        Generation 6: average fitness 6.68, best fitness 8.00
+        Generation 7: average fitness 6.72, best fitness 8.00
+        Generation 8: average fitness 6.74, best fitness 8.00
+        Generation 9: average fitness 6.88, best fitness 8.00
+        Generation 10: average fitness 7.02, best fitness 8.00
+        Generation 11: average fitness 7.20, best fitness 8.00
+        Generation 12: average fitness 6.92, best fitness 8.00
+        Generation 13: average fitness 6.90, best fitness 8.00
+        Generation 14: average fitness 6.94, best fitness 8.00
+        Generation 15: average fitness 7.04, best fitness 8.00
+        Generation 16: average fitness 6.64, best fitness 8.00
+        Generation 17: average fitness 6.66, best fitness 8.00
+        Generation 18: average fitness 6.64, best fitness 8.00
+        Generation 19: average fitness 6.50, best fitness 7.00
+        Generation 20: average fitness 6.60, best fitness 7.00
+        Generation 21: average fitness 6.62, best fitness 7.00
+        Generation 22: average fitness 6.16, best fitness 7.00
+        Generation 23: average fitness 6.28, best fitness 7.00
+        Generation 24: average fitness 6.34, best fitness 7.00
+        Generation 25: average fitness 6.28, best fitness 7.00
+        Generation 26: average fitness 6.38, best fitness 7.00
+        Generation 27: average fitness 5.72, best fitness 6.00
+        Generation 28: average fitness 5.82, best fitness 6.00
+        Generation 29: average fitness 5.82, best fitness 6.00
+   Number of generations to get best genome at execution number 9: 30
+
+   GA execution number: 10. GA data:
+        Generation 0: average fitness 4.90, best fitness 9.00
+        Generation 1: average fitness 5.54, best fitness 9.00
+        Generation 2: average fitness 5.98, best fitness 9.00
+        Generation 3: average fitness 6.42, best fitness 9.00
+        Generation 4: average fitness 6.68, best fitness 9.00
+        Generation 5: average fitness 7.26, best fitness 9.00
+        Generation 6: average fitness 7.08, best fitness 8.00
+        Generation 7: average fitness 6.72, best fitness 8.00
+        Generation 8: average fitness 6.80, best fitness 8.00
+        Generation 9: average fitness 6.80, best fitness 8.00
+        Generation 10: average fitness 6.68, best fitness 8.00
+        Generation 11: average fitness 7.14, best fitness 8.00
+        Generation 12: average fitness 6.72, best fitness 8.00
+        Generation 13: average fitness 6.60, best fitness 8.00
+        Generation 14: average fitness 5.78, best fitness 7.00
+        Generation 15: average fitness 6.08, best fitness 7.00
+        Generation 16: average fitness 7.26, best fitness 8.00
+        Generation 17: average fitness 7.40, best fitness 8.00
+        Generation 18: average fitness 6.82, best fitness 7.00
+        Generation 19: average fitness 6.84, best fitness 7.00
+        Generation 20: average fitness 6.86, best fitness 7.00
+        Generation 21: average fitness 6.90, best fitness 7.00
+        Generation 22: average fitness 6.86, best fitness 7.00
+        Generation 23: average fitness 6.94, best fitness 7.00
+        Generation 24: average fitness 6.94, best fitness 7.00
+        Generation 25: average fitness 6.88, best fitness 7.00
+        Generation 26: average fitness 6.76, best fitness 7.00
+        Generation 27: average fitness 6.76, best fitness 7.00
+        Generation 28: average fitness 6.80, best fitness 7.00
+        Generation 29: average fitness 5.94, best fitness 6.00
+   Number of generations to get best genome at execution number 10: 30
+
+   GA execution number: 11. GA data:
+        Generation 0: average fitness 4.68, best fitness 8.00
+        Generation 1: average fitness 5.04, best fitness 8.00
+        Generation 2: average fitness 5.42, best fitness 8.00
+        Generation 3: average fitness 5.44, best fitness 8.00
+        Generation 4: average fitness 5.56, best fitness 8.00
+        Generation 5: average fitness 5.80, best fitness 8.00
+        Generation 6: average fitness 6.34, best fitness 8.00
+        Generation 7: average fitness 6.26, best fitness 7.00
+        Generation 8: average fitness 6.44, best fitness 7.00
+        Generation 9: average fitness 6.52, best fitness 7.00
+        Generation 10: average fitness 6.80, best fitness 7.00
+        Generation 11: average fitness 6.94, best fitness 7.00
+        Generation 12: average fitness 7.54, best fitness 8.00
+        Generation 13: average fitness 8.00, best fitness 8.00
+        Generation 14: average fitness 8.00, best fitness 8.00
+        Generation 15: average fitness 7.36, best fitness 8.00
+        Generation 16: average fitness 7.04, best fitness 8.00
+        Generation 17: average fitness 7.24, best fitness 8.00
+        Generation 18: average fitness 7.44, best fitness 8.00
+        Generation 19: average fitness 7.72, best fitness 8.00
+        Generation 20: average fitness 7.80, best fitness 8.00
+        Generation 21: average fitness 6.98, best fitness 7.00
+        Generation 22: average fitness 8.94, best fitness 9.00
+        Generation 23: average fitness 8.94, best fitness 9.00
+        Generation 24: average fitness 8.88, best fitness 9.00
+        Generation 25: average fitness 8.00, best fitness 8.00
+        Generation 26: average fitness 8.00, best fitness 8.00
+        Generation 27: average fitness 8.00, best fitness 8.00
+        Generation 28: average fitness 8.00, best fitness 8.00
+        Generation 29: average fitness 8.00, best fitness 8.00
+   Number of generations to get best genome at execution number 11: 30
+
+   GA execution number: 12. GA data:
+        Generation 0: average fitness 4.94, best fitness 9.00
+        Generation 1: average fitness 5.82, best fitness 9.00
+        Generation 2: average fitness 6.32, best fitness 9.00
+        Generation 3: average fitness 6.08, best fitness 9.00
+        Generation 4: average fitness 6.34, best fitness 9.00
+        Generation 5: average fitness 6.50, best fitness 9.00
+        Generation 6: average fitness 6.94, best fitness 9.00
+        Generation 7: average fitness 6.92, best fitness 9.00
+        Generation 8: average fitness 7.34, best fitness 9.00
+        Generation 9: average fitness 7.30, best fitness 9.00
+        Generation 10: average fitness 7.74, best fitness 9.00
+        Generation 11: average fitness 8.00, best fitness 9.00
+        Generation 12: average fitness 8.10, best fitness 9.00
+        Generation 13: average fitness 8.10, best fitness 9.00
+        Generation 14: average fitness 8.18, best fitness 9.00
+        Generation 15: average fitness 8.28, best fitness 9.00
+        Generation 16: average fitness 8.14, best fitness 9.00
+        Generation 17: average fitness 7.92, best fitness 8.00
+        Generation 18: average fitness 8.22, best fitness 9.00
+        Generation 19: average fitness 7.72, best fitness 9.00
+        Generation 20: average fitness 7.96, best fitness 9.00
+        Generation 21: average fitness 7.48, best fitness 8.00
+        Generation 22: average fitness 7.54, best fitness 8.00
+        Generation 23: average fitness 7.54, best fitness 8.00
+        Generation 24: average fitness 7.54, best fitness 8.00
+        Generation 25: average fitness 7.66, best fitness 8.00
+        Generation 26: average fitness 7.00, best fitness 7.00
+        Generation 27: average fitness 7.00, best fitness 7.00
+        Generation 28: average fitness 6.24, best fitness 7.00
+        Generation 29: average fitness 6.72, best fitness 8.00
+   Number of generations to get best genome at execution number 12: 30
+
+   GA execution number: 13. GA data:
+        Generation 0: average fitness 5.00, best fitness 8.00
+        Generation 1: average fitness 5.50, best fitness 8.00
+        Generation 2: average fitness 6.06, best fitness 8.00
+        Generation 3: average fitness 6.34, best fitness 8.00
+        Generation 4: average fitness 6.46, best fitness 8.00
+        Generation 5: average fitness 6.62, best fitness 8.00
+        Generation 6: average fitness 6.74, best fitness 8.00
+        Generation 7: average fitness 6.74, best fitness 8.00
+        Generation 8: average fitness 7.18, best fitness 8.00
+        Generation 9: average fitness 7.26, best fitness 8.00
+        Generation 10: average fitness 7.36, best fitness 8.00
+        Generation 11: average fitness 7.62, best fitness 8.00
+        Generation 12: average fitness 7.68, best fitness 8.00
+        Generation 13: average fitness 6.90, best fitness 7.00
+        Generation 14: average fitness 7.88, best fitness 8.00
+        Generation 15: average fitness 8.00, best fitness 8.00
+        Generation 16: average fitness 8.00, best fitness 8.00
+        Generation 17: average fitness 8.00, best fitness 8.00
+        Generation 18: average fitness 6.00, best fitness 6.00
+        Generation 19: average fitness 5.00, best fitness 5.00
+        Generation 20: average fitness 4.00, best fitness 4.00
+        Generation 21: average fitness 5.00, best fitness 5.00
+        Generation 22: average fitness 5.00, best fitness 5.00
+        Generation 23: average fitness 5.00, best fitness 5.00
+        Generation 24: average fitness 6.00, best fitness 6.00
+        Generation 25: average fitness 6.00, best fitness 6.00
+        Generation 26: average fitness 7.00, best fitness 7.00
+        Generation 27: average fitness 6.00, best fitness 6.00
+        Generation 28: average fitness 6.00, best fitness 6.00
+        Generation 29: average fitness 6.00, best fitness 6.00
+   Number of generations to get best genome at execution number 13: 30
+
+   GA execution number: 14. GA data:
+        Generation 0: average fitness 4.96, best fitness 8.00
+        Generation 1: average fitness 5.64, best fitness 8.00
+        Generation 2: average fitness 6.06, best fitness 8.00
+        Generation 3: average fitness 6.30, best fitness 8.00
+        Generation 4: average fitness 6.38, best fitness 8.00
+        Generation 5: average fitness 6.80, best fitness 8.00
+        Generation 6: average fitness 6.76, best fitness 8.00
+        Generation 7: average fitness 7.14, best fitness 8.00
+        Generation 8: average fitness 7.04, best fitness 8.00
+        Generation 9: average fitness 6.66, best fitness 8.00
+        Generation 10: average fitness 7.52, best fitness 8.00
+        Generation 11: average fitness 7.30, best fitness 8.00
+        Generation 12: average fitness 7.40, best fitness 8.00
+        Generation 13: average fitness 7.58, best fitness 8.00
+        Generation 14: average fitness 7.70, best fitness 8.00
+        Generation 15: average fitness 7.78, best fitness 8.00
+        Generation 16: average fitness 7.82, best fitness 8.00
+        Generation 17: average fitness 7.78, best fitness 8.00
+        Generation 18: average fitness 7.86, best fitness 8.00
+        Generation 19: average fitness 7.70, best fitness 8.00
+        Generation 20: average fitness 7.74, best fitness 8.00
+        Generation 21: average fitness 8.56, best fitness 9.00
+        Generation 22: average fitness 8.70, best fitness 9.00
+        Generation 23: average fitness 7.96, best fitness 8.00
+        Generation 24: average fitness 7.96, best fitness 8.00
+        Generation 25: average fitness 8.00, best fitness 8.00
+        Generation 26: average fitness 8.00, best fitness 8.00
+        Generation 27: average fitness 8.00, best fitness 8.00
+        Generation 28: average fitness 8.00, best fitness 8.00
+        Generation 29: average fitness 8.00, best fitness 8.00
+   Number of generations to get best genome at execution number 14: 30
+
+   GA execution number: 15. GA data:
+        Generation 0: average fitness 5.28, best fitness 9.00
+        Generation 1: average fitness 5.82, best fitness 9.00
+        Generation 2: average fitness 6.88, best fitness 9.00
+        Generation 3: average fitness 6.60, best fitness 9.00
+        Generation 4: average fitness 6.68, best fitness 9.00
+        Generation 5: average fitness 7.04, best fitness 9.00
+        Generation 6: average fitness 7.08, best fitness 9.00
+        Generation 7: average fitness 7.32, best fitness 9.00
+        Generation 8: average fitness 7.42, best fitness 8.00
+        Generation 9: average fitness 7.68, best fitness 8.00
+        Generation 10: average fitness 7.74, best fitness 8.00
+        Generation 11: average fitness 7.84, best fitness 8.00
+        Generation 12: average fitness 7.58, best fitness 8.00
+        Generation 13: average fitness 7.58, best fitness 8.00
+        Generation 14: average fitness 7.66, best fitness 8.00
+        Generation 15: average fitness 7.00, best fitness 7.00
+        Generation 16: average fitness 7.00, best fitness 7.00
+        Generation 17: average fitness 7.00, best fitness 7.00
+        Generation 18: average fitness 7.14, best fitness 8.00
+        Generation 19: average fitness 7.14, best fitness 8.00
+        Generation 20: average fitness 7.20, best fitness 8.00
+        Generation 21: average fitness 7.30, best fitness 8.00
+        Generation 22: average fitness 7.24, best fitness 8.00
+        Generation 23: average fitness 6.84, best fitness 8.00
+        Generation 24: average fitness 6.80, best fitness 8.00
+        Generation 25: average fitness 7.08, best fitness 8.00
+        Generation 26: average fitness 7.08, best fitness 8.00
+        Generation 27: average fitness 7.12, best fitness 8.00
+        Generation 28: average fitness 7.28, best fitness 8.00
+        Generation 29: average fitness 7.52, best fitness 8.00
+   Number of generations to get best genome at execution number 15: 30
+
+   GA execution number: 16. GA data:
+        Generation 0: average fitness 4.90, best fitness 9.00
+        Generation 1: average fitness 5.14, best fitness 9.00
+        Generation 2: average fitness 5.14, best fitness 8.00
+        Generation 3: average fitness 5.54, best fitness 8.00
+        Generation 4: average fitness 6.14, best fitness 8.00
+        Generation 5: average fitness 6.26, best fitness 8.00
+        Generation 6: average fitness 6.30, best fitness 8.00
+        Generation 7: average fitness 6.30, best fitness 7.00
+        Generation 8: average fitness 6.48, best fitness 7.00
+        Generation 9: average fitness 6.58, best fitness 7.00
+        Generation 10: average fitness 6.14, best fitness 7.00
+        Generation 11: average fitness 6.14, best fitness 7.00
+        Generation 12: average fitness 6.22, best fitness 7.00
+        Generation 13: average fitness 6.34, best fitness 7.00
+        Generation 14: average fitness 6.28, best fitness 7.00
+        Generation 15: average fitness 6.32, best fitness 7.00
+        Generation 16: average fitness 6.28, best fitness 7.00
+        Generation 17: average fitness 5.92, best fitness 7.00
+        Generation 18: average fitness 5.52, best fitness 6.00
+        Generation 19: average fitness 5.58, best fitness 6.00
+        Generation 20: average fitness 6.00, best fitness 6.00
+        Generation 21: average fitness 5.42, best fitness 6.00
+        Generation 22: average fitness 5.44, best fitness 6.00
+        Generation 23: average fitness 5.52, best fitness 6.00
+        Generation 24: average fitness 5.00, best fitness 5.00
+        Generation 25: average fitness 5.48, best fitness 6.00
+        Generation 26: average fitness 6.36, best fitness 7.00
+        Generation 27: average fitness 6.38, best fitness 7.00
+        Generation 28: average fitness 6.36, best fitness 7.00
+        Generation 29: average fitness 6.54, best fitness 7.00
+   Number of generations to get best genome at execution number 16: 30
+
+   GA execution number: 17. GA data:
+        Generation 0: average fitness 5.00, best fitness 7.00
+        Generation 1: average fitness 5.18, best fitness 7.00
+        Generation 2: average fitness 5.24, best fitness 7.00
+        Generation 3: average fitness 5.22, best fitness 7.00
+        Generation 4: average fitness 5.58, best fitness 7.00
+        Generation 5: average fitness 5.62, best fitness 7.00
+        Generation 6: average fitness 5.56, best fitness 7.00
+        Generation 7: average fitness 5.60, best fitness 7.00
+        Generation 8: average fitness 6.22, best fitness 8.00
+        Generation 9: average fitness 6.50, best fitness 8.00
+        Generation 10: average fitness 6.14, best fitness 8.00
+        Generation 11: average fitness 6.42, best fitness 8.00
+        Generation 12: average fitness 6.50, best fitness 8.00
+        Generation 13: average fitness 6.82, best fitness 8.00
+        Generation 14: average fitness 6.98, best fitness 8.00
+        Generation 15: average fitness 7.02, best fitness 8.00
+        Generation 16: average fitness 7.36, best fitness 8.00
+        Generation 17: average fitness 6.84, best fitness 7.00
+        Generation 18: average fitness 6.00, best fitness 6.00
+        Generation 19: average fitness 6.00, best fitness 6.00
+        Generation 20: average fitness 5.14, best fitness 6.00
+        Generation 21: average fitness 5.10, best fitness 6.00
+        Generation 22: average fitness 5.20, best fitness 6.00
+        Generation 23: average fitness 5.82, best fitness 6.00
+        Generation 24: average fitness 5.84, best fitness 6.00
+        Generation 25: average fitness 5.86, best fitness 6.00
+        Generation 26: average fitness 5.90, best fitness 6.00
+        Generation 27: average fitness 4.04, best fitness 5.00
+        Generation 28: average fitness 4.16, best fitness 5.00
+        Generation 29: average fitness 4.00, best fitness 4.00
+   Number of generations to get best genome at execution number 17: 30
+
+   GA execution number: 18. GA data:
+        Generation 0: average fitness 5.44, best fitness 8.00
+        Generation 1: average fitness 5.86, best fitness 8.00
+        Generation 2: average fitness 6.22, best fitness 8.00
+        Generation 3: average fitness 6.26, best fitness 8.00
+        Generation 4: average fitness 6.44, best fitness 8.00
+        Generation 5: average fitness 6.56, best fitness 8.00
+        Generation 6: average fitness 6.92, best fitness 8.00
+        Generation 7: average fitness 6.62, best fitness 8.00
+        Generation 8: average fitness 7.22, best fitness 8.00
+        Generation 9: average fitness 6.38, best fitness 8.00
+        Generation 10: average fitness 6.42, best fitness 8.00
+        Generation 11: average fitness 6.14, best fitness 8.00
+        Generation 12: average fitness 5.88, best fitness 8.00
+        Generation 13: average fitness 5.82, best fitness 8.00
+        Generation 14: average fitness 5.90, best fitness 8.00
+        Generation 15: average fitness 5.68, best fitness 8.00
+        Generation 16: average fitness 5.82, best fitness 8.00
+        Generation 17: average fitness 6.10, best fitness 8.00
+        Generation 18: average fitness 6.20, best fitness 8.00
+        Generation 19: average fitness 6.34, best fitness 8.00
+        Generation 20: average fitness 6.46, best fitness 8.00
+        Generation 21: average fitness 6.58, best fitness 8.00
+        Generation 22: average fitness 7.02, best fitness 8.00
+        Generation 23: average fitness 7.84, best fitness 8.00
+        Generation 24: average fitness 7.44, best fitness 8.00
+        Generation 25: average fitness 6.34, best fitness 7.00
+        Generation 26: average fitness 6.00, best fitness 6.00
+        Generation 27: average fitness 5.34, best fitness 6.00
+        Generation 28: average fitness 5.36, best fitness 6.00
+        Generation 29: average fitness 5.32, best fitness 6.00
+   Number of generations to get best genome at execution number 18: 30
+
+   GA execution number: 19. GA data:
+        Generation 0: average fitness 5.26, best fitness 8.00
+        Generation 1: average fitness 5.78, best fitness 8.00
+        Generation 2: average fitness 6.34, best fitness 8.00
+        Generation 3: average fitness 6.18, best fitness 8.00
+        Generation 4: average fitness 6.32, best fitness 8.00
+        Generation 5: average fitness 6.70, best fitness 8.00
+        Generation 6: average fitness 6.92, best fitness 8.00
+        Generation 7: average fitness 6.82, best fitness 8.00
+        Generation 8: average fitness 6.70, best fitness 8.00
+        Generation 9: average fitness 6.32, best fitness 7.00
+        Generation 10: average fitness 6.36, best fitness 7.00
+        Generation 11: average fitness 6.38, best fitness 7.00
+        Generation 12: average fitness 6.30, best fitness 7.00
+        Generation 13: average fitness 6.28, best fitness 7.00
+        Generation 14: average fitness 6.34, best fitness 7.00
+        Generation 15: average fitness 6.40, best fitness 7.00
+        Generation 16: average fitness 6.56, best fitness 7.00
+        Generation 17: average fitness 6.64, best fitness 7.00
+        Generation 18: average fitness 5.04, best fitness 6.00
+        Generation 19: average fitness 5.04, best fitness 6.00
+        Generation 20: average fitness 5.00, best fitness 5.00
+        Generation 21: average fitness 5.86, best fitness 6.00
+        Generation 22: average fitness 5.84, best fitness 6.00
+        Generation 23: average fitness 5.84, best fitness 6.00
+        Generation 24: average fitness 5.94, best fitness 6.00
+        Generation 25: average fitness 5.00, best fitness 5.00
+        Generation 26: average fitness 4.04, best fitness 5.00
+        Generation 27: average fitness 4.04, best fitness 5.00
+        Generation 28: average fitness 4.04, best fitness 5.00
+        Generation 29: average fitness 3.12, best fitness 5.00
+   Number of generations to get best genome at execution number 19: 30
+
+   GA execution number: 20. GA data:
+        Generation 0: average fitness 4.70, best fitness 9.00
+        Generation 1: average fitness 5.36, best fitness 9.00
+        Generation 2: average fitness 5.90, best fitness 8.00
+        Generation 3: average fitness 6.56, best fitness 8.00
+        Generation 4: average fitness 6.96, best fitness 8.00
+        Generation 5: average fitness 7.06, best fitness 8.00
+        Generation 6: average fitness 7.24, best fitness 8.00
+        Generation 7: average fitness 7.12, best fitness 8.00
+        Generation 8: average fitness 6.94, best fitness 8.00
+        Generation 9: average fitness 6.40, best fitness 7.00
+        Generation 10: average fitness 6.56, best fitness 7.00
+        Generation 11: average fitness 7.18, best fitness 8.00
+        Generation 12: average fitness 7.44, best fitness 8.00
+        Generation 13: average fitness 6.72, best fitness 7.00
+        Generation 14: average fitness 6.78, best fitness 7.00
+        Generation 15: average fitness 6.76, best fitness 7.00
+        Generation 16: average fitness 6.14, best fitness 7.00
+        Generation 17: average fitness 6.40, best fitness 7.00
+        Generation 18: average fitness 6.08, best fitness 7.00
+        Generation 19: average fitness 6.08, best fitness 7.00
+        Generation 20: average fitness 6.10, best fitness 7.00
+        Generation 21: average fitness 6.12, best fitness 7.00
+        Generation 22: average fitness 5.76, best fitness 7.00
+        Generation 23: average fitness 5.20, best fitness 7.00
+        Generation 24: average fitness 5.20, best fitness 7.00
+        Generation 25: average fitness 5.28, best fitness 7.00
+        Generation 26: average fitness 5.28, best fitness 7.00
+        Generation 27: average fitness 5.32, best fitness 7.00
+        Generation 28: average fitness 5.40, best fitness 7.00
+        Generation 29: average fitness 5.40, best fitness 7.00
+   Number of generations to get best genome at execution number 20: 30
+
+   GA execution number: 21. GA data:
+        Generation 0: average fitness 5.20, best fitness 9.00
+        Generation 1: average fitness 5.74, best fitness 9.00
+        Generation 2: average fitness 5.64, best fitness 9.00
+        Generation 3: average fitness 6.18, best fitness 9.00
+        Generation 4: average fitness 6.44, best fitness 9.00
+        Generation 5: average fitness 6.58, best fitness 9.00
+        Generation 6: average fitness 6.76, best fitness 9.00
+        Generation 7: average fitness 6.84, best fitness 9.00
+        Generation 8: average fitness 6.94, best fitness 9.00
+        Generation 9: average fitness 7.52, best fitness 9.00
+        Generation 10: average fitness 7.52, best fitness 8.00
+        Generation 11: average fitness 7.00, best fitness 8.00
+        Generation 12: average fitness 7.00, best fitness 8.00
+        Generation 13: average fitness 7.00, best fitness 8.00
+        Generation 14: average fitness 7.06, best fitness 8.00
+        Generation 15: average fitness 6.32, best fitness 7.00
+        Generation 16: average fitness 6.36, best fitness 7.00
+        Generation 17: average fitness 6.22, best fitness 7.00
+        Generation 18: average fitness 6.04, best fitness 7.00
+        Generation 19: average fitness 6.08, best fitness 7.00
+        Generation 20: average fitness 5.34, best fitness 7.00
+        Generation 21: average fitness 4.78, best fitness 7.00
+        Generation 22: average fitness 5.74, best fitness 7.00
+        Generation 23: average fitness 5.84, best fitness 7.00
+        Generation 24: average fitness 5.82, best fitness 7.00
+        Generation 25: average fitness 5.60, best fitness 7.00
+        Generation 26: average fitness 5.44, best fitness 6.00
+        Generation 27: average fitness 5.94, best fitness 6.00
+        Generation 28: average fitness 5.96, best fitness 6.00
+        Generation 29: average fitness 5.62, best fitness 6.00
+   Number of generations to get best genome at execution number 21: 30
+
+   GA execution number: 22. GA data:
+        Generation 0: average fitness 4.84, best fitness 8.00
+        Generation 1: average fitness 5.52, best fitness 8.00
+        Generation 2: average fitness 5.98, best fitness 8.00
+        Generation 3: average fitness 6.50, best fitness 8.00
+        Generation 4: average fitness 7.12, best fitness 8.00
+        Generation 5: average fitness 6.88, best fitness 8.00
+        Generation 6: average fitness 6.86, best fitness 8.00
+        Generation 7: average fitness 6.38, best fitness 8.00
+        Generation 8: average fitness 6.58, best fitness 8.00
+        Generation 9: average fitness 6.32, best fitness 8.00
+        Generation 10: average fitness 6.60, best fitness 8.00
+        Generation 11: average fitness 6.44, best fitness 8.00
+        Generation 12: average fitness 6.46, best fitness 8.00
+        Generation 13: average fitness 7.08, best fitness 8.00
+        Generation 14: average fitness 7.28, best fitness 8.00
+        Generation 15: average fitness 7.12, best fitness 8.00
+        Generation 16: average fitness 7.36, best fitness 8.00
+        Generation 17: average fitness 6.94, best fitness 7.00
+        Generation 18: average fitness 6.96, best fitness 7.00
+        Generation 19: average fitness 6.96, best fitness 7.00
+        Generation 20: average fitness 6.72, best fitness 7.00
+        Generation 21: average fitness 6.82, best fitness 7.00
+        Generation 22: average fitness 6.86, best fitness 7.00
+        Generation 23: average fitness 7.00, best fitness 7.00
+        Generation 24: average fitness 7.00, best fitness 7.00
+        Generation 25: average fitness 7.28, best fitness 8.00
+        Generation 26: average fitness 7.68, best fitness 9.00
+        Generation 27: average fitness 7.60, best fitness 9.00
+        Generation 28: average fitness 7.42, best fitness 8.00
+        Generation 29: average fitness 7.00, best fitness 7.00
+   Number of generations to get best genome at execution number 22: 30
+
+   GA execution number: 23. GA data:
+        Generation 0: average fitness 4.64, best fitness 9.00
+        Generation 1: average fitness 5.20, best fitness 9.00
+        Generation 2: average fitness 6.08, best fitness 9.00
+        Generation 3: average fitness 6.90, best fitness 9.00
+        Generation 4: average fitness 7.12, best fitness 9.00
+        Generation 5: average fitness 7.24, best fitness 9.00
+        Generation 6: average fitness 6.68, best fitness 8.00
+        Generation 7: average fitness 6.34, best fitness 7.00
+        Generation 8: average fitness 6.26, best fitness 7.00
+        Generation 9: average fitness 5.76, best fitness 6.00
+        Generation 10: average fitness 5.68, best fitness 6.00
+        Generation 11: average fitness 5.60, best fitness 6.00
+        Generation 12: average fitness 6.08, best fitness 7.00
+        Generation 13: average fitness 6.92, best fitness 8.00
+        Generation 14: average fitness 7.28, best fitness 8.00
+        Generation 15: average fitness 7.40, best fitness 8.00
+        Generation 16: average fitness 7.40, best fitness 8.00
+        Generation 17: average fitness 6.64, best fitness 7.00
+        Generation 18: average fitness 6.80, best fitness 7.00
+        Generation 19: average fitness 6.88, best fitness 7.00
+        Generation 20: average fitness 6.88, best fitness 7.00
+        Generation 21: average fitness 6.88, best fitness 7.00
+        Generation 22: average fitness 6.88, best fitness 7.00
+        Generation 23: average fitness 6.88, best fitness 7.00
+        Generation 24: average fitness 6.92, best fitness 7.00
+        Generation 25: average fitness 6.92, best fitness 7.00
+        Generation 26: average fitness 9.00, best fitness 9.00
+        Generation 27: average fitness 10.00, best fitness 10.00
+   Number of generations to get best genome at execution number 23: 27
+
+   GA execution number: 24. GA data:
+        Generation 0: average fitness 4.84, best fitness 9.00
+        Generation 1: average fitness 5.28, best fitness 9.00
+        Generation 2: average fitness 5.40, best fitness 9.00
+        Generation 3: average fitness 6.02, best fitness 9.00
+        Generation 4: average fitness 6.62, best fitness 9.00
+        Generation 5: average fitness 6.80, best fitness 9.00
+        Generation 6: average fitness 7.44, best fitness 9.00
+        Generation 7: average fitness 7.76, best fitness 9.00
+        Generation 8: average fitness 7.40, best fitness 8.00
+        Generation 9: average fitness 6.62, best fitness 7.00
+        Generation 10: average fitness 6.06, best fitness 7.00
+        Generation 11: average fitness 6.02, best fitness 7.00
+        Generation 12: average fitness 6.06, best fitness 7.00
+        Generation 13: average fitness 6.18, best fitness 7.00
+        Generation 14: average fitness 6.10, best fitness 7.00
+        Generation 15: average fitness 6.44, best fitness 7.00
+        Generation 16: average fitness 6.52, best fitness 7.00
+        Generation 17: average fitness 6.50, best fitness 7.00
+        Generation 18: average fitness 6.60, best fitness 7.00
+        Generation 19: average fitness 6.00, best fitness 6.00
+        Generation 20: average fitness 6.00, best fitness 6.00
+        Generation 21: average fitness 7.28, best fitness 8.00
+        Generation 22: average fitness 7.80, best fitness 9.00
+        Generation 23: average fitness 8.16, best fitness 9.00
+        Generation 24: average fitness 8.28, best fitness 9.00
+        Generation 25: average fitness 8.58, best fitness 9.00
+        Generation 26: average fitness 7.80, best fitness 8.00
+        Generation 27: average fitness 7.76, best fitness 8.00
+        Generation 28: average fitness 7.84, best fitness 8.00
+        Generation 29: average fitness 7.88, best fitness 8.00
+   Number of generations to get best genome at execution number 24: 30
+
+   GA execution number: 25. GA data:
+        Generation 0: average fitness 4.94, best fitness 8.00
+        Generation 1: average fitness 5.58, best fitness 8.00
+        Generation 2: average fitness 6.06, best fitness 8.00
+        Generation 3: average fitness 6.44, best fitness 8.00
+        Generation 4: average fitness 6.46, best fitness 8.00
+        Generation 5: average fitness 6.76, best fitness 8.00
+        Generation 6: average fitness 6.82, best fitness 8.00
+        Generation 7: average fitness 7.04, best fitness 8.00
+        Generation 8: average fitness 6.96, best fitness 8.00
+        Generation 9: average fitness 7.12, best fitness 8.00
+        Generation 10: average fitness 7.24, best fitness 8.00
+        Generation 11: average fitness 7.44, best fitness 8.00
+        Generation 12: average fitness 7.70, best fitness 8.00
+        Generation 13: average fitness 7.22, best fitness 8.00
+        Generation 14: average fitness 7.90, best fitness 9.00
+        Generation 15: average fitness 7.96, best fitness 9.00
+        Generation 16: average fitness 8.16, best fitness 9.00
+        Generation 17: average fitness 8.40, best fitness 9.00
+        Generation 18: average fitness 7.70, best fitness 8.00
+        Generation 19: average fitness 7.00, best fitness 7.00
+        Generation 20: average fitness 7.00, best fitness 7.00
+        Generation 21: average fitness 6.02, best fitness 7.00
+        Generation 22: average fitness 6.00, best fitness 6.00
+        Generation 23: average fitness 6.84, best fitness 7.00
+        Generation 24: average fitness 7.88, best fitness 8.00
+        Generation 25: average fitness 6.00, best fitness 6.00
+        Generation 26: average fitness 5.94, best fitness 6.00
+        Generation 27: average fitness 6.00, best fitness 6.00
+        Generation 28: average fitness 6.00, best fitness 6.00
+        Generation 29: average fitness 6.00, best fitness 6.00
+   Number of generations to get best genome at execution number 25: 30
+
+   GA execution number: 26. GA data:
+        Generation 0: average fitness 5.06, best fitness 9.00
+        Generation 1: average fitness 5.28, best fitness 9.00
+        Generation 2: average fitness 6.24, best fitness 9.00
+        Generation 3: average fitness 6.56, best fitness 9.00
+        Generation 4: average fitness 6.94, best fitness 9.00
+        Generation 5: average fitness 7.28, best fitness 9.00
+        Generation 6: average fitness 6.84, best fitness 8.00
+        Generation 7: average fitness 6.96, best fitness 8.00
+        Generation 8: average fitness 6.84, best fitness 8.00
+        Generation 9: average fitness 7.08, best fitness 8.00
+        Generation 10: average fitness 7.00, best fitness 8.00
+        Generation 11: average fitness 6.92, best fitness 8.00
+        Generation 12: average fitness 6.56, best fitness 7.00
+        Generation 13: average fitness 6.68, best fitness 7.00
+        Generation 14: average fitness 6.62, best fitness 7.00
+        Generation 15: average fitness 6.64, best fitness 7.00
+        Generation 16: average fitness 6.62, best fitness 7.00
+        Generation 17: average fitness 6.80, best fitness 7.00
+        Generation 18: average fitness 6.70, best fitness 7.00
+        Generation 19: average fitness 7.16, best fitness 8.00
+        Generation 20: average fitness 6.96, best fitness 8.00
+        Generation 21: average fitness 7.00, best fitness 8.00
+        Generation 22: average fitness 7.02, best fitness 8.00
+        Generation 23: average fitness 7.14, best fitness 8.00
+        Generation 24: average fitness 7.00, best fitness 7.00
+        Generation 25: average fitness 7.00, best fitness 7.00
+        Generation 26: average fitness 7.00, best fitness 7.00
+        Generation 27: average fitness 7.00, best fitness 7.00
+        Generation 28: average fitness 7.00, best fitness 7.00
+        Generation 29: average fitness 6.54, best fitness 7.00
+   Number of generations to get best genome at execution number 26: 30
+
+   GA execution number: 27. GA data:
+        Generation 0: average fitness 5.20, best fitness 9.00
+        Generation 1: average fitness 5.44, best fitness 9.00
+        Generation 2: average fitness 5.48, best fitness 9.00
+        Generation 3: average fitness 6.00, best fitness 9.00
+        Generation 4: average fitness 6.74, best fitness 9.00
+        Generation 5: average fitness 6.96, best fitness 9.00
+        Generation 6: average fitness 7.40, best fitness 9.00
+        Generation 7: average fitness 7.56, best fitness 9.00
+        Generation 8: average fitness 7.56, best fitness 9.00
+        Generation 9: average fitness 7.74, best fitness 9.00
+        Generation 10: average fitness 7.90, best fitness 9.00
+        Generation 11: average fitness 7.96, best fitness 9.00
+        Generation 12: average fitness 8.08, best fitness 9.00
+        Generation 13: average fitness 8.10, best fitness 9.00
+        Generation 14: average fitness 8.18, best fitness 9.00
+        Generation 15: average fitness 8.28, best fitness 9.00
+        Generation 16: average fitness 8.44, best fitness 9.00
+        Generation 17: average fitness 8.34, best fitness 9.00
+        Generation 18: average fitness 7.72, best fitness 9.00
+        Generation 19: average fitness 7.58, best fitness 9.00
+        Generation 20: average fitness 7.92, best fitness 9.00
+        Generation 21: average fitness 7.98, best fitness 9.00
+        Generation 22: average fitness 7.36, best fitness 8.00
+        Generation 23: average fitness 7.64, best fitness 8.00
+        Generation 24: average fitness 7.76, best fitness 8.00
+        Generation 25: average fitness 7.76, best fitness 8.00
+        Generation 26: average fitness 7.96, best fitness 8.00
+        Generation 27: average fitness 8.00, best fitness 8.00
+        Generation 28: average fitness 8.00, best fitness 8.00
+        Generation 29: average fitness 8.00, best fitness 8.00
+   Number of generations to get best genome at execution number 27: 30
+
+   GA execution number: 28. GA data:
+        Generation 0: average fitness 5.00, best fitness 8.00
+        Generation 1: average fitness 5.70, best fitness 8.00
+        Generation 2: average fitness 5.90, best fitness 8.00
+        Generation 3: average fitness 6.32, best fitness 8.00
+        Generation 4: average fitness 6.30, best fitness 8.00
+        Generation 5: average fitness 6.72, best fitness 9.00
+        Generation 6: average fitness 6.80, best fitness 9.00
+        Generation 7: average fitness 7.48, best fitness 9.00
+        Generation 8: average fitness 7.78, best fitness 9.00
+        Generation 9: average fitness 8.04, best fitness 9.00
+        Generation 10: average fitness 7.64, best fitness 9.00
+        Generation 11: average fitness 7.10, best fitness 9.00
+        Generation 12: average fitness 7.10, best fitness 9.00
+        Generation 13: average fitness 7.12, best fitness 9.00
+        Generation 14: average fitness 7.00, best fitness 7.00
+        Generation 15: average fitness 7.00, best fitness 7.00
+        Generation 16: average fitness 6.64, best fitness 7.00
+        Generation 17: average fitness 6.76, best fitness 7.00
+        Generation 18: average fitness 6.60, best fitness 7.00
+        Generation 19: average fitness 6.60, best fitness 7.00
+        Generation 20: average fitness 6.88, best fitness 7.00
+        Generation 21: average fitness 6.76, best fitness 7.00
+        Generation 22: average fitness 6.88, best fitness 7.00
+        Generation 23: average fitness 6.84, best fitness 7.00
+        Generation 24: average fitness 6.76, best fitness 7.00
+        Generation 25: average fitness 6.84, best fitness 7.00
+        Generation 26: average fitness 5.98, best fitness 6.00
+        Generation 27: average fitness 5.00, best fitness 5.00
+        Generation 28: average fitness 5.00, best fitness 5.00
+        Generation 29: average fitness 5.00, best fitness 5.00
+   Number of generations to get best genome at execution number 28: 30
+
+   GA execution number: 29. GA data:
+        Generation 0: average fitness 5.22, best fitness 9.00
+        Generation 1: average fitness 5.86, best fitness 9.00
+        Generation 2: average fitness 6.40, best fitness 9.00
+        Generation 3: average fitness 6.66, best fitness 9.00
+        Generation 4: average fitness 6.72, best fitness 9.00
+        Generation 5: average fitness 7.06, best fitness 9.00
+        Generation 6: average fitness 7.16, best fitness 9.00
+        Generation 7: average fitness 7.74, best fitness 9.00
+        Generation 8: average fitness 7.94, best fitness 9.00
+        Generation 9: average fitness 8.00, best fitness 9.00
+        Generation 10: average fitness 7.70, best fitness 9.00
+        Generation 11: average fitness 7.38, best fitness 9.00
+        Generation 12: average fitness 7.40, best fitness 8.00
+        Generation 13: average fitness 7.52, best fitness 8.00
+        Generation 14: average fitness 7.64, best fitness 8.00
+        Generation 15: average fitness 7.48, best fitness 8.00
+        Generation 16: average fitness 7.68, best fitness 8.00
+        Generation 17: average fitness 7.26, best fitness 8.00
+        Generation 18: average fitness 6.80, best fitness 8.00
+        Generation 19: average fitness 6.70, best fitness 8.00
+        Generation 20: average fitness 7.00, best fitness 9.00
+        Generation 21: average fitness 7.52, best fitness 9.00
+        Generation 22: average fitness 7.78, best fitness 9.00
+        Generation 23: average fitness 7.84, best fitness 9.00
+        Generation 24: average fitness 8.20, best fitness 9.00
+        Generation 25: average fitness 7.46, best fitness 8.00
+        Generation 26: average fitness 6.90, best fitness 7.00
+        Generation 27: average fitness 6.82, best fitness 7.00
+        Generation 28: average fitness 6.00, best fitness 6.00
+        Generation 29: average fitness 5.28, best fitness 7.00
+   Number of generations to get best genome at execution number 29: 30
+
+Summary:
+Average Generations for Crossover Rate 0.7 = 17.966666666666665
+Average Generations for Crossover Rate 0.0 = 28.766666666666666
