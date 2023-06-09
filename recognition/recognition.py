@@ -235,6 +235,7 @@ class Recognizer(QtWidgets.QMainWindow, ui_main.Ui_Recognizer):
 
         # Get image data from MNIST
         current_image = self.X_dev[:, index, None]
+        print(current_image)
         prediction = self.make_predictions(self.X_dev[:, index, None], self.W1, self.b1, self.W2, self.b2)
         label = self.Y_dev[index]
 
@@ -291,6 +292,6 @@ if __name__ == "__main__":
 
     app = QtWidgets.QApplication([])
     recognizer = Recognizer()
-    # recognizer.setWindowIcon(QtGui.QIcon('{0}/icons/split_smart.ico'.format(root)))
+    recognizer.setWindowIcon(QtGui.QIcon('{0}/icons/recognizer.ico'.format(root)))
     recognizer.show()
     app.exec_()
